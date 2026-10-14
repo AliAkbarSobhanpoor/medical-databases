@@ -1,4 +1,3 @@
-
 // ---------- Detail page (database.html) ----------
 
 // Define the labels used on the detail page for each language.
@@ -31,8 +30,7 @@ async function loadDescription(database, lang) {
   const requestId = ++descriptionRequestId;
 
   // Select the correct Markdown URL for the language.
-  const markdownUrl =
-    lang === "fa" ? database.longFaUrl : database.longEnUrl;
+  const markdownUrl = lang === "fa" ? database.longFaUrl : database.longEnUrl;
 
   // Display a loading message while fetching the file.
   container.textContent =
@@ -59,9 +57,7 @@ async function loadDescription(database, lang) {
     }
 
     // Convert Markdown into HTML and sanitize it before insertion.
-    const html = window.DOMPurify.sanitize(
-      window.marked.parse(markdown),
-    );
+    const html = window.DOMPurify.sanitize(window.marked.parse(markdown));
 
     // Display the sanitized HTML.
     container.innerHTML = html;
@@ -100,10 +96,11 @@ function render() {
   document.title = d.name + " | " + SHELL[lang].brand;
 
   // Render the page structure and an empty description container.
+  // Persian pages right-align the English title (text-end); English pages left-align it (text-start).
   $("main").innerHTML = `
-    <h1 class="big">${esc(d.name)}</h1>
+    <h1 class="big ${lang === "fa" ? "text-end" : "text-start"}">${esc(d.name)}</h1>
 
-    <a class="portal" href="${esc(d.url)}" target="_blank" rel="noopener">
+    <a class="portal ${lang === "fa" ? "[animation-direction:reverse]" : ""}" href="${esc(d.url)}" target="_blank" rel="noopener">
       <span class="txt">${t.lets}</span>
       <span class="arrows" aria-hidden="true">
         ${lang === "fa" ? "&lt;" : "&gt;"}
@@ -112,27 +109,14 @@ function render() {
 
     <p class="lead">${esc(lang === "fa" ? d.fa : d.en)}</p>
 
-    <div class="long" id="long-description" aria-live="polite"></div>
+    <div
+      class="long prose prose-slate max-w-none"
+      id="long-description"
+      aria-live="polite"
+    ></div>
 
     <a class="back" href="index.html">${t.back}</a>
   `;
-
-  // Preserve the existing portal animation.
-  const portal = document.querySelector(".portal");
-
-  if (portal) {
-    portal.style.animation =
-      lang === "fa"
-        ? "flow 6s linear infinite reverse"
-        : "flow 6s linear infinite";
-  }
-
-  // Align the title according to the active language.
-  const title = document.querySelector(".big");
-
-  if (title) {
-    title.style.textAlign = lang === "fa" ? "end" : "start";
-  }
 
   // Load the description without blocking the rest of the page.
   loadDescription(d, lang);

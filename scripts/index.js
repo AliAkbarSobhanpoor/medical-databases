@@ -32,10 +32,20 @@ function render() {
     norm(d.name + " " + d.fa + " " + d.en).includes(term),
   );
 
+  // Tailwind classes kept as constants so the template stays readable
+  const CARD =
+    "block rounded-lg border border-s-[5px] border-line border-s-teal bg-card px-[1.4rem] py-[1.3rem] transition-[translate,border-color] duration-200 hover:-translate-y-[3px] hover:border-s-gold motion-reduce:transition-none";
+  const CARD_TITLE = "mb-[0.3rem] text-start text-[1.25rem] text-teal";
+  const CARD_DESC = "text-[0.95rem] text-mute";
+
+  // ...inside render():
   grid.innerHTML = list
     .map(
       (d) =>
-        `<a class="card" href="database.html?id=${encodeURIComponent(d.id)}"><h2>${esc(d.name)}</h2><p>${esc(d[lang])}</p></a>`,
+        `<a class="${CARD}" href="database.html?id=${encodeURIComponent(d.id)}">
+         <h2 dir="ltr" class="${CARD_TITLE}">${esc(d.name)}</h2>
+         <p class="${CARD_DESC}">${esc(d[lang])}</p>
+       </a>`,
     )
     .join("");
   none.hidden = DATA.length > 0 && list.length > 0;

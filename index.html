@@ -8,35 +8,75 @@
       name="description"
       content="Search curated medical databases: PubMed, MedlinePlus, Cochrane and more."
     />
+    <link rel="icon" href="data:," />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;800&family=Source+Serif+4:wght@600;700&display=swap"
     />
     <link rel="stylesheet" href="styles/index.css" />
   </head>
-  <body>
-    <header class="bar">
-      <a class="brand" href="index.html"><i>✚</i><span id="brand"></span></a>
-      <div class="tools">
-        <button id="lang"></button
-        ><button id="theme" aria-label="Theme"></button>
+  <body class="bg-page font-sans leading-[1.8] text-ink">
+    <header
+      class="flex items-center justify-between border-b-[3px] border-gold bg-navy px-[clamp(1rem,4vw,3rem)] py-[0.7rem] text-white"
+    >
+      <a
+        class="flex items-center gap-[0.6rem] text-[1.1rem] font-bold"
+        href="index.html"
+      >
+        <i class="text-gold not-italic">✚</i><span id="brand"></span>
+      </a>
+      <div
+        class="flex gap-2 [&_b]:font-normal [&_b]:opacity-55 [&_b.on]:font-bold [&_b.on]:text-gold [&_b.on]:opacity-100"
+      >
+        <button
+          id="lang"
+          class="cursor-pointer rounded-[0.4rem] border border-white/35 px-[0.8rem] py-[0.3rem] hover:border-gold"
+        ></button>
+        <button
+          id="theme"
+          aria-label="Theme"
+          class="cursor-pointer rounded-[0.4rem] border border-white/35 px-[0.8rem] py-[0.3rem] hover:border-gold"
+        ></button>
       </div>
     </header>
-    <section class="hero">
-      <h1 id="title"></h1>
-      <input id="q" type="search" autocomplete="off" aria-label="Search" />
+
+    <section
+      class="hero-bg relative overflow-hidden px-4 pt-[clamp(3rem,10vw,6rem)] pb-10 text-center text-white"
+    >
+      <h1
+        id="title"
+        class="relative mb-[1.6rem] text-[length:clamp(1.9rem,5vw,3.4rem)] leading-[1.3] font-extrabold"
+      ></h1>
+      <input
+        id="q"
+        type="search"
+        autocomplete="off"
+        aria-label="Search"
+        class="relative w-[min(560px,92%)] rounded-full border-2 border-transparent bg-white px-[1.2rem] py-[0.9rem] text-[#12263a] focus:border-gold"
+      />
       <svg
-        class="ecg"
+        class="mx-auto mt-12 block h-[70px] w-[min(640px,90%)] opacity-80"
         viewBox="0 0 600 80"
         preserveAspectRatio="none"
         aria-hidden="true"
       >
-        <path d="M0 40h180l12-26 18 54 14-48 10 20h366" />
+        <path
+          d="M0 40h180l12-26 18 54 14-48 10 20h366"
+          class="animate-ecg fill-none stroke-gold stroke-2 [stroke-dasharray:900] [stroke-dashoffset:900] motion-reduce:animate-none motion-reduce:[stroke-dashoffset:0]"
+        />
       </svg>
     </section>
-    <main class="grid" id="grid"></main>
-    <p id="none" hidden></p>
-    <footer id="foot"></footer>
+
+    <main
+      id="grid"
+      class="mx-auto my-10 grid max-w-[1100px] grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-[1.2rem] px-4"
+    ></main>
+    <p id="none" hidden class="text-center text-mute"></p>
+    <footer
+      id="foot"
+      class="border-t border-line p-6 text-center text-[0.85rem] text-mute"
+    ></footer>
+
     <script src="scripts/common.js" defer></script>
     <script src="scripts/index.js" defer></script>
   </body>

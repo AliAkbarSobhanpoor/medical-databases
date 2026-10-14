@@ -1,0 +1,24 @@
+{
+  "name": "medical-databases",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliAkbarSobhanpoor/medical-databases.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AliAkbarSobhanpoor/medical-databases/issues"
+  },
+  "homepage": "https://github.com/AliAkbarSobhanpoor/medical-databases#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "@tailwindcss/typography": "^0.5.20",
+    "tailwindcss": "^4.3.3"
+  }
+}

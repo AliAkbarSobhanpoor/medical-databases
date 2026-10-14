@@ -1,0 +1,177 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@source "../scripts";
+
+:root {
+  --page: #f3f7fa;
+  --card: #fff;
+  --ink: #12263a;
+  --mute: #51657a;
+  --line: #d5e0e8;
+}
+[data-theme="dark"] {
+  --page: #08141f;
+  --card: #0f2234;
+  --ink: #e6eef5;
+  --mute: #98adc0;
+  --line: #1d3850;
+}
+
+@theme inline {
+  --color-navy: #0c2340;
+  --color-teal: #127a8a;
+  --color-gold: #c9a24a;
+  --color-page: var(--page);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-mute: var(--mute);
+  --color-line: var(--line);
+  --font-sans: "Vazirmatn", Tahoma, system-ui, sans-serif;
+}
+
+@theme {
+  --animate-ecg: ecg 4s linear infinite;
+  @keyframes ecg {
+    0% { stroke-dashoffset: 900; }
+    45%, 55% { stroke-dashoffset: 0; }
+    100% { stroke-dashoffset: -900; }
+  }
+}
+
+@layer base {
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible {
+    outline: 3px solid var(--color-gold);
+    outline-offset: 2px;
+  }
+}
+
+/* url() is relative to styles/index.css, so the image goes in styles/hero.jpg.
+   No image yet? Delete the url(hero.jpg) line. */
+.hero-bg {
+  background:
+    linear-gradient(#0c2340d9, #0c2340b3),
+    url(hero.jpg) center/cover,
+    linear-gradient(135deg, var(--color-navy), var(--color-teal));
+}
+
+@layer components {
+  .big {
+    margin: 0 0 2rem;
+    font-weight: 800;
+    font-size: clamp(2.4rem, 8vw, 5rem);
+    line-height: 1.15;
+    color: var(--color-navy);
+    direction: ltr;
+    text-align: start;
+  }
+  [data-theme="dark"] .big {
+    color: #fff;
+  }
+
+  .portal {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    min-height: 7rem;
+    padding: 1.5rem 2rem;
+    border: 2px solid var(--color-gold);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.5rem;
+    background: linear-gradient(
+      110deg,
+      var(--color-navy),
+      var(--color-teal),
+      var(--color-navy)
+    );
+    background-size: 220% 100%;
+    animation: flow 7s linear infinite;
+    transition:
+      transform 0.25s,
+      box-shadow 0.25s;
+  }
+  .portal:hover {
+    transform: scale(1.015);
+    box-shadow: 0 12px 32px #127a8a66;
+  }
+  .portal .go {
+    background: var(--color-gold);
+    color: var(--color-navy);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem 1.2rem;
+    border-radius: 2rem;
+  }
+  .portal .txt {
+    position: relative;
+    z-index: 1;
+    padding-inline-start: 0.5rem;
+  }
+
+  .arrows {
+    position: absolute;
+    top: 55%;
+    inset-inline-start: 2.5rem;
+    transform: translateY(-50%);
+    z-index: 0;
+    font-size: 9rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    white-space: nowrap;
+    direction: ltr;
+    color: #fff;
+    opacity: 0.16;
+    pointer-events: none;
+    transition:
+      transform 0.25s,
+      opacity 0.25s;
+  }
+  .portal:hover .arrows {
+    transform: translateY(-50%) translateX(-8px);
+    opacity: 0.26;
+  }
+  [dir="ltr"] .arrows {
+    inset-inline-start: auto;
+    inset-inline-end: 2.5rem;
+  }
+  [dir="ltr"] .portal:hover .arrows {
+    transform: translateY(-50%) translateX(8px);
+  }
+
+  .lead {
+    margin: 2rem 0 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  .long {
+    margin: 0.5rem 0 2rem;
+    color: var(--color-mute);
+  }
+  .back {
+    color: var(--color-teal);
+    font-weight: 700;
+  }
+}
+
+@keyframes flow {
+  to {
+    background-position: -220% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portal {
+    animation: none;
+  }
+  .portal,
+  .arrows {
+    transition: none;
+  }
+}
