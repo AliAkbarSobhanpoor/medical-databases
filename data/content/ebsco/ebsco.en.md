@@ -1,4 +1,4 @@
-# About EBSCO
+## About EBSCO
 
 EBSCO provides scholarly and medical research databases and search tools. Available content depends on the selected database and institutional subscription.
 

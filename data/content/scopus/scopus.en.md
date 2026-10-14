@@ -1,4 +1,4 @@
-# About Scopus
+## About Scopus
 
 Scopus is an abstract and citation database used to discover scholarly literature and explore citation relationships.
 

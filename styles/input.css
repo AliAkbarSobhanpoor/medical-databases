@@ -78,7 +78,7 @@
     align-items: center;
     gap: 1rem;
     width: 100%;
-    min-height: 7rem;
+    min-height: 5rem;
     padding: 1.5rem 2rem;
     border: 2px solid var(--color-gold);
     border-radius: 5px;

@@ -1,4 +1,4 @@
-# About TRIP Database
+## About TRIP Database
 
 TRIP Database helps users find clinical evidence and research relevant to healthcare.
 

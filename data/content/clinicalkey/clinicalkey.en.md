@@ -1,4 +1,4 @@
-# About ClinicalKey
+## About ClinicalKey
 
 ClinicalKey is Elsevier's clinical information platform for healthcare professionals.
 

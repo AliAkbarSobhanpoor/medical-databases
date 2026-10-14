@@ -1,4 +1,4 @@
-# About MedlinePlus
+## About MedlinePlus
 
 MedlinePlus is a free resource from the U.S. National Library of Medicine that provides easy-to-understand health information.
 

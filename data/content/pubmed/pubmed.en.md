@@ -1,4 +1,4 @@
-# About PubMed
+## About PubMed
 
 PubMed is a free resource from the U.S. National Library of Medicine for searching biomedical and life-sciences literature.
 

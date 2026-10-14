@@ -1,4 +1,4 @@
-# About Web of Science
+## About Web of Science
 
 Web of Science is a scholarly indexing and citation platform for discovering research and exploring citation relationships.
 

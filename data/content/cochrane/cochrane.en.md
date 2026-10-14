@@ -1,4 +1,4 @@
-# About the Cochrane Library
+## About the Cochrane Library
 
 The Cochrane Library provides evidence resources to support informed healthcare decisions.
 
