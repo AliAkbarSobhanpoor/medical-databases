@@ -4,12 +4,12 @@ const DATA_URL = "data/data.json";
 const SHELL = {
   fa: {
     brand: "پایگاه‌های داده پزشکی",
-    foot: "پیوندها به منابع بیرونی هستند. ساخته شده با ♥️ توسط علی اکبر سبحانپور",
+    foot: "ساخته شده با ♥️ توسط علی اکبر سبحانپور",
     error: "بارگذاری داده‌ها ناموفق بود.",
   },
   en: {
     brand: "Medical Databases",
-    foot: "Links lead to external resources.",
+    foot: "made with ♥️ by AliAkbar Sobhanpoor",
     error: "Failed to load data.",
   },
 };
