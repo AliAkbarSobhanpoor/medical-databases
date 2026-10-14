@@ -6,7 +6,7 @@
     <title>Medical Database Directory | مرجع پایگاه‌های داده پزشکی</title>
     <meta
       name="description"
-      content="Search curated medical databases: PubMed, MedlinePlus, Cochrane and more."
+      content="Search curated medical databases by category: PubMed, MedlinePlus, Cochrane, Scopus and more."
     />
     <link rel="icon" href="data:," />
     <link
@@ -54,8 +54,13 @@
         aria-label="Search"
         class="relative w-[min(560px,92%)] rounded-full border-2 border-transparent bg-white px-[1.2rem] py-[0.9rem] text-[#12263a] focus:border-gold"
       />
+      <nav
+        id="cats"
+        aria-label="Categories"
+        class="relative mx-auto mt-5 flex max-w-[900px] flex-wrap justify-center gap-2 px-4"
+      ></nav>
       <svg
-        class="mx-auto mt-12 block h-[70px] w-[min(640px,90%)] opacity-80"
+        class="mx-auto mt-10 block h-[70px] w-[min(640px,90%)] opacity-80"
         viewBox="0 0 600 80"
         preserveAspectRatio="none"
         aria-hidden="true"
@@ -67,10 +72,7 @@
       </svg>
     </section>
 
-    <main
-      id="grid"
-      class="mx-auto my-10 grid max-w-[1100px] grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-[1.2rem] px-4"
-    ></main>
+    <main id="grid" class="mx-auto my-10 max-w-[1100px] px-4"></main>
     <p id="none" hidden class="text-center text-mute"></p>
     <footer
       id="foot"

@@ -628,8 +628,20 @@
       margin-bottom: 0;
     }
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
   }
   .mb-\[0\.3rem\] {
     margin-bottom: 0.3rem;
@@ -696,11 +708,17 @@
   .grid-cols-\[repeat\(auto-fill\,minmax\(250px\,1fr\)\)\] {
     grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
   }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
   .items-center {
     align-items: center;
   }
   .justify-between {
     justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -739,6 +757,10 @@
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
   }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
   .border-b-\[3px\] {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 3px;
@@ -766,6 +788,9 @@
   }
   .bg-card {
     background-color: var(--card);
+  }
+  .bg-gold {
+    background-color: #c9a24a;
   }
   .bg-navy {
     background-color: #0c2340;
@@ -821,6 +846,9 @@
   .pt-\[clamp\(3rem\,10vw\,6rem\)\] {
     padding-top: clamp(3rem, 10vw, 6rem);
   }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
   }
@@ -838,6 +866,9 @@
   }
   .font-sans {
     font-family: "Vazirmatn", Tahoma, system-ui, sans-serif;
+  }
+  .text-\[0\.9rem\] {
+    font-size: 0.9rem;
   }
   .text-\[0\.85rem\] {
     font-size: 0.85rem;
@@ -877,6 +908,10 @@
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
   }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+  }
   .text-\[\#12263a\] {
     color: #12263a;
   }
@@ -888,6 +923,9 @@
   }
   .text-mute {
     color: var(--mute);
+  }
+  .text-navy {
+    color: #0c2340;
   }
   .text-teal {
     color: #127a8a;
@@ -923,6 +961,11 @@
   }
   .transition-\[translate\,border-color\] {
     transition-property: translate,border-color;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-colors {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }

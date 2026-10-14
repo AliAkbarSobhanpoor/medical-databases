@@ -2,6 +2,7 @@
   {
     "id": "pubmed",
     "name": "PubMed",
+    "categories": ["literature"],
     "fa": "جستجو در مقالات زیست‌پزشکی",
     "en": "Search biomedical literature",
     "url": "https://pubmed.ncbi.nlm.nih.gov/",
@@ -9,44 +10,19 @@
     "longEnUrl": "data/content/pubmed/pubmed.en.md"
   },
   {
-    "id": "clinicalkey",
-    "name": "ClinicalKey",
-    "fa": "جستجوی منابع بالینی و پزشکی",
-    "en": "Search clinical and medical resources",
-    "url": "https://www.clinicalkey.com/",
-    "longFaUrl": "data/content/clinicalkey/clinicalkey.fa.md",
-    "longEnUrl": "data/content/clinicalkey/clinicalkey.en.md"
-  },
-  {
-    "id": "cochrane",
-    "name": "Cochrane Library",
-    "fa": "مرورهای نظام‌مند و شواهد پزشکی مبتنی بر شواهد",
-    "en": "Systematic reviews and evidence-based medicine",
-    "url": "https://www.cochranelibrary.com/",
-    "longFaUrl": "data/content/cochrane/cochrane.fa.md",
-    "longEnUrl": "data/content/cochrane/cochrane.en.md"
-  },
-  {
-    "id": "trip",
-    "name": "TRIP Database",
-    "fa": "جستجوی شواهد بالینی و راهنماهای پزشکی",
-    "en": "Search clinical evidence and medical guidelines",
-    "url": "https://www.tripdatabase.com/",
-    "longFaUrl": "data/content/trip/trip.fa.md",
-    "longEnUrl": "data/content/trip/trip.en.md"
-  },
-  {
-    "id": "medlineplus",
-    "name": "MedlinePlus",
-    "fa": "اطلاعات سلامت قابل فهم برای عموم",
-    "en": "Easy-to-understand health information",
-    "url": "https://medlineplus.gov/",
-    "longFaUrl": "data/content/medlineplus/medlineplus.fa.md",
-    "longEnUrl": "data/content/medlineplus/medlineplus.en.md"
+    "id": "ebsco",
+    "name": "EBSCO",
+    "categories": ["literature"],
+    "fa": "جستجوی پایگاه‌های اطلاعاتی علمی و پزشکی",
+    "en": "Search scholarly and medical databases",
+    "url": "https://www.ebsco.com/",
+    "longFaUrl": "data/content/ebsco/ebsco.fa.md",
+    "longEnUrl": "data/content/ebsco/ebsco.en.md"
   },
   {
     "id": "scopus",
     "name": "Scopus",
+    "categories": ["citation", "literature"],
     "fa": "جستجوی مقالات و تحلیل استنادی",
     "en": "Search scholarly literature and citations",
     "url": "https://www.scopus.com/",
@@ -56,6 +32,7 @@
   {
     "id": "isi",
     "name": "Web of Science",
+    "categories": ["citation", "literature"],
     "fa": "پایگاه استنادی وب آو ساینس (ISI)",
     "en": "Web of Science citation database",
     "url": "https://www.webofscience.com/",
@@ -63,12 +40,43 @@
     "longEnUrl": "data/content/isi/isi.en.md"
   },
   {
-    "id": "ebsco",
-    "name": "EBSCO",
-    "fa": "جستجوی پایگاه‌های اطلاعاتی علمی و پزشکی",
-    "en": "Search scholarly and medical databases",
-    "url": "https://www.ebsco.com/",
-    "longFaUrl": "data/content/ebsco/ebsco.fa.md",
-    "longEnUrl": "data/content/ebsco/ebsco.en.md"
+    "id": "cochrane",
+    "name": "Cochrane Library",
+    "categories": ["evidence"],
+    "fa": "مرورهای نظام‌مند و شواهد پزشکی مبتنی بر شواهد",
+    "en": "Systematic reviews and evidence-based medicine",
+    "url": "https://www.cochranelibrary.com/",
+    "longFaUrl": "data/content/cochrane/cochrane.fa.md",
+    "longEnUrl": "data/content/cochrane/cochrane.en.md"
+  },
+  {
+    "id": "trip",
+    "name": "TRIP Database",
+    "categories": ["evidence"],
+    "fa": "جستجوی شواهد بالینی و راهنماهای پزشکی",
+    "en": "Search clinical evidence and medical guidelines",
+    "url": "https://www.tripdatabase.com/",
+    "longFaUrl": "data/content/trip/trip.fa.md",
+    "longEnUrl": "data/content/trip/trip.en.md"
+  },
+  {
+    "id": "clinicalkey",
+    "name": "ClinicalKey",
+    "categories": ["evidence", "literature"],
+    "fa": "جستجوی منابع بالینی و پزشکی",
+    "en": "Search clinical and medical resources",
+    "url": "https://www.clinicalkey.com/",
+    "longFaUrl": "data/content/clinicalkey/clinicalkey.fa.md",
+    "longEnUrl": "data/content/clinicalkey/clinicalkey.en.md"
+  },
+  {
+    "id": "medlineplus",
+    "name": "MedlinePlus",
+    "categories": ["consumer"],
+    "fa": "اطلاعات سلامت قابل فهم برای عموم",
+    "en": "Easy-to-understand health information",
+    "url": "https://medlineplus.gov/",
+    "longFaUrl": "data/content/medlineplus/medlineplus.fa.md",
+    "longEnUrl": "data/content/medlineplus/medlineplus.en.md"
   }
 ]
