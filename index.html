@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Medical Database Directory | مرجع پایگاه‌های داده پزشکی</title>
+    <meta
+      name="description"
+      content="Search curated medical databases: PubMed, MedlinePlus, Cochrane and more."
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;800&family=Source+Serif+4:wght@600;700&display=swap"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <header class="bar">
+      <a class="brand" href="index.html"><i>✚</i><span id="brand"></span></a>
+      <div class="tools">
+        <button id="lang"></button
+        ><button id="theme" aria-label="Theme"></button>
+      </div>
+    </header>
+    <section class="hero">
+      <h1 id="title"></h1>
+      <input id="q" type="search" autocomplete="off" aria-label="Search" />
+      <svg
+        class="ecg"
+        viewBox="0 0 600 80"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <path d="M0 40h180l12-26 18 54 14-48 10 20h366" />
+      </svg>
+    </section>
+    <main class="grid" id="grid"></main>
+    <p id="none" hidden></p>
+    <footer id="foot"></footer>
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+  </body>
+</html>
