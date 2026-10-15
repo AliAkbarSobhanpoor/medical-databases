@@ -2,7 +2,10 @@
   {
     "id": "pubmed",
     "name": "PubMed",
-    "categories": ["literature"],
+    "categories": [
+      "literature",
+      "citation"
+    ],
     "fa": "جستجو در مقالات زیست‌پزشکی",
     "en": "Search biomedical literature",
     "url": "https://pubmed.ncbi.nlm.nih.gov/",
@@ -12,7 +15,9 @@
   {
     "id": "ebsco",
     "name": "EBSCO",
-    "categories": ["literature"],
+    "categories": [
+      "literature"
+    ],
     "fa": "جستجوی پایگاه‌های اطلاعاتی علمی و پزشکی",
     "en": "Search scholarly and medical databases",
     "url": "https://www.ebsco.com/",
@@ -22,7 +27,10 @@
   {
     "id": "scopus",
     "name": "Scopus",
-    "categories": ["citation", "literature"],
+    "categories": [
+      "citation",
+      "literature"
+    ],
     "fa": "جستجوی مقالات و تحلیل استنادی",
     "en": "Search scholarly literature and citations",
     "url": "https://www.scopus.com/",
@@ -32,7 +40,10 @@
   {
     "id": "isi",
     "name": "Web of Science",
-    "categories": ["citation", "literature"],
+    "categories": [
+      "citation",
+      "literature"
+    ],
     "fa": "پایگاه استنادی وب آو ساینس (ISI)",
     "en": "Web of Science citation database",
     "url": "https://www.webofscience.com/",
@@ -42,7 +53,9 @@
   {
     "id": "cochrane",
     "name": "Cochrane Library",
-    "categories": ["evidence"],
+    "categories": [
+      "evidence"
+    ],
     "fa": "مرورهای نظام‌مند و شواهد پزشکی مبتنی بر شواهد",
     "en": "Systematic reviews and evidence-based medicine",
     "url": "https://www.cochranelibrary.com/",
@@ -52,7 +65,9 @@
   {
     "id": "trip",
     "name": "TRIP Database",
-    "categories": ["evidence"],
+    "categories": [
+      "evidence"
+    ],
     "fa": "جستجوی شواهد بالینی و راهنماهای پزشکی",
     "en": "Search clinical evidence and medical guidelines",
     "url": "https://www.tripdatabase.com/",
@@ -62,7 +77,10 @@
   {
     "id": "clinicalkey",
     "name": "ClinicalKey",
-    "categories": ["evidence", "literature"],
+    "categories": [
+      "evidence",
+      "literature"
+    ],
     "fa": "جستجوی منابع بالینی و پزشکی",
     "en": "Search clinical and medical resources",
     "url": "https://www.clinicalkey.com/",
@@ -72,11 +90,1523 @@
   {
     "id": "medlineplus",
     "name": "MedlinePlus",
-    "categories": ["consumer"],
+    "categories": [
+      "consumer"
+    ],
     "fa": "اطلاعات سلامت قابل فهم برای عموم",
     "en": "Easy-to-understand health information",
     "url": "https://medlineplus.gov/",
     "longFaUrl": "data/content/medlineplus/medlineplus.fa.md",
     "longEnUrl": "data/content/medlineplus/medlineplus.en.md"
+  },
+  {
+    "id": "pmc",
+    "name": "PubMed Central (PMC)",
+    "categories": [
+      "literature"
+    ],
+    "fa": "آرشیو رایگان متن کامل مقالات زیست‌پزشکی",
+    "en": "Free full-text archive of biomedical articles",
+    "url": "https://pmc.ncbi.nlm.nih.gov/",
+    "longFaUrl": "data/content/pmc/pmc.fa.md",
+    "longEnUrl": "data/content/pmc/pmc.en.md"
+  },
+  {
+    "id": "europepmc",
+    "name": "Europe PMC",
+    "categories": [
+      "literature"
+    ],
+    "fa": "جستجوی مقالات علوم زیستی و پزشکی با دسترسی باز",
+    "en": "Open-access life sciences literature search",
+    "url": "https://europepmc.org/",
+    "longFaUrl": "data/content/europepmc/europepmc.fa.md",
+    "longEnUrl": "data/content/europepmc/europepmc.en.md"
+  },
+  {
+    "id": "embase",
+    "name": "Embase",
+    "categories": [
+      "literature"
+    ],
+    "fa": "پایگاه زیست‌پزشکی و دارویی الزویر",
+    "en": "Elsevier biomedical and pharmacological database",
+    "url": "https://www.embase.com/",
+    "longFaUrl": "data/content/embase/embase.fa.md",
+    "longEnUrl": "data/content/embase/embase.en.md"
+  },
+  {
+    "id": "cinahl",
+    "name": "CINAHL",
+    "categories": [
+      "literature"
+    ],
+    "fa": "پایگاه پرستاری و علوم بهداشتی وابسته",
+    "en": "Nursing and allied health literature",
+    "url": "https://www.ebsco.com/products/research-databases/cinahl-database",
+    "longFaUrl": "data/content/cinahl/cinahl.fa.md",
+    "longEnUrl": "data/content/cinahl/cinahl.en.md"
+  },
+  {
+    "id": "psycinfo",
+    "name": "APA PsycInfo",
+    "categories": [
+      "literature"
+    ],
+    "fa": "پایگاه مقالات روان‌شناسی و علوم رفتاری",
+    "en": "Psychology and behavioral science literature",
+    "url": "https://www.apa.org/pubs/databases/psycinfo",
+    "longFaUrl": "data/content/psycinfo/psycinfo.fa.md",
+    "longEnUrl": "data/content/psycinfo/psycinfo.en.md"
+  },
+  {
+    "id": "cabi",
+    "name": "CABI Digital Library",
+    "categories": [
+      "literature"
+    ],
+    "fa": "منابع علوم کشاورزی، دامپزشکی و سلامت جهانی",
+    "en": "Agriculture, veterinary and global health resources",
+    "url": "https://www.cabidigitallibrary.org/product/qi",
+    "longFaUrl": "data/content/cabi/cabi.fa.md",
+    "longEnUrl": "data/content/cabi/cabi.en.md"
+  },
+  {
+    "id": "lilacs",
+    "name": "LILACS",
+    "categories": [
+      "literature"
+    ],
+    "fa": "پایگاه علوم سلامت آمریکای لاتین و کارائیب",
+    "en": "Latin American and Caribbean health sciences literature",
+    "url": "https://lilacs.bvsalud.org/en/",
+    "longFaUrl": "data/content/lilacs/lilacs.fa.md",
+    "longEnUrl": "data/content/lilacs/lilacs.en.md"
+  },
+  {
+    "id": "aim",
+    "name": "African Index Medicus",
+    "categories": [
+      "literature"
+    ],
+    "fa": "نمایه مقالات پزشکی و سلامت آفریقا",
+    "en": "Index of African health and medical literature",
+    "url": "https://www.afro.who.int/health-topics/african-index-medicus",
+    "longFaUrl": "data/content/aim/aim.fa.md",
+    "longEnUrl": "data/content/aim/aim.en.md"
+  },
+  {
+    "id": "gim",
+    "name": "Global Index Medicus",
+    "categories": [
+      "literature"
+    ],
+    "fa": "نمایه جهانی مقالات پزشکی منطقه‌ای سازمان جهانی بهداشت",
+    "en": "WHO global index of regional medical literature",
+    "url": "https://globalindexmedicus.net/",
+    "longFaUrl": "data/content/gim/gim.fa.md",
+    "longEnUrl": "data/content/gim/gim.en.md"
+  },
+  {
+    "id": "scholar",
+    "name": "Google Scholar",
+    "categories": [
+      "literature",
+      "citation"
+    ],
+    "fa": "جستجوی مقالات علمی در همه رشته‌ها",
+    "en": "Search scholarly literature across disciplines",
+    "url": "https://scholar.google.com/",
+    "longFaUrl": "data/content/scholar/scholar.fa.md",
+    "longEnUrl": "data/content/scholar/scholar.en.md"
+  },
+  {
+    "id": "semanticscholar",
+    "name": "Semantic Scholar",
+    "categories": [
+      "literature",
+      "ai_discovery"
+    ],
+    "fa": "جستجوی مقالات با کمک هوش مصنوعی",
+    "en": "AI-powered scholarly paper search",
+    "url": "https://www.semanticscholar.org/",
+    "longFaUrl": "data/content/semanticscholar/semanticscholar.fa.md",
+    "longEnUrl": "data/content/semanticscholar/semanticscholar.en.md"
+  },
+  {
+    "id": "openalex",
+    "name": "OpenAlex",
+    "categories": [
+      "literature",
+      "citation"
+    ],
+    "fa": "فهرست باز مقالات، نویسندگان و استنادها",
+    "en": "Open catalog of papers, authors and citations",
+    "url": "https://openalex.org/",
+    "longFaUrl": "data/content/openalex/openalex.fa.md",
+    "longEnUrl": "data/content/openalex/openalex.en.md"
+  },
+  {
+    "id": "dimensions",
+    "name": "Dimensions",
+    "categories": [
+      "literature",
+      "citation"
+    ],
+    "fa": "پایگاه مقالات، بودجه‌ها و پتنت‌های پژوهشی",
+    "en": "Research articles, grants and patents database",
+    "url": "https://www.dimensions.ai/",
+    "longFaUrl": "data/content/dimensions/dimensions.fa.md",
+    "longEnUrl": "data/content/dimensions/dimensions.en.md"
+  },
+  {
+    "id": "doaj",
+    "name": "DOAJ",
+    "categories": [
+      "literature"
+    ],
+    "fa": "فهرست مجلات دسترسی باز",
+    "en": "Directory of Open Access Journals",
+    "url": "https://doaj.org/",
+    "longFaUrl": "data/content/doaj/doaj.fa.md",
+    "longEnUrl": "data/content/doaj/doaj.en.md"
+  },
+  {
+    "id": "scielo",
+    "name": "SciELO",
+    "categories": [
+      "literature"
+    ],
+    "fa": "کتابخانه الکترونیکی مجلات دسترسی باز",
+    "en": "Open-access scientific electronic library",
+    "url": "https://scielo.org/",
+    "longFaUrl": "data/content/scielo/scielo.fa.md",
+    "longEnUrl": "data/content/scielo/scielo.en.md"
+  },
+  {
+    "id": "lens",
+    "name": "The Lens",
+    "categories": [
+      "citation",
+      "literature"
+    ],
+    "fa": "جستجوی مقالات و پتنت‌ها با داده‌های استنادی",
+    "en": "Scholarly works and patents with citation data",
+    "url": "https://www.lens.org/",
+    "longFaUrl": "data/content/lens/lens.fa.md",
+    "longEnUrl": "data/content/lens/lens.en.md"
+  },
+  {
+    "id": "crossref",
+    "name": "Crossref",
+    "categories": [
+      "citation"
+    ],
+    "fa": "ثبت DOI و فراداده مقالات",
+    "en": "DOI registration and scholarly metadata",
+    "url": "https://www.crossref.org/",
+    "longFaUrl": "data/content/crossref/crossref.fa.md",
+    "longEnUrl": "data/content/crossref/crossref.en.md"
+  },
+  {
+    "id": "coci",
+    "name": "OpenCitations COCI",
+    "categories": [
+      "citation"
+    ],
+    "fa": "شاخص باز استنادهای مبتنی بر DOI",
+    "en": "Open index of DOI-to-DOI citations",
+    "url": "https://opencitations.net/index/coci",
+    "longFaUrl": "data/content/coci/coci.fa.md",
+    "longEnUrl": "data/content/coci/coci.en.md"
+  },
+  {
+    "id": "doci",
+    "name": "OpenCitations DOCI",
+    "categories": [
+      "citation"
+    ],
+    "fa": "شاخص باز استنادهای مجموعه‌داده‌ها",
+    "en": "Open index of dataset citations",
+    "url": "https://opencitations.net/index/doci",
+    "longFaUrl": "data/content/doci/doci.fa.md",
+    "longEnUrl": "data/content/doci/doci.en.md"
+  },
+  {
+    "id": "poci",
+    "name": "OpenCitations POCI",
+    "categories": [
+      "citation"
+    ],
+    "fa": "شاخص باز استنادهای PubMed",
+    "en": "Open index of PubMed citations",
+    "url": "https://opencitations.net/index/poci",
+    "longFaUrl": "data/content/poci/poci.fa.md",
+    "longEnUrl": "data/content/poci/poci.en.md"
+  },
+  {
+    "id": "icite",
+    "name": "iCite (NIH)",
+    "categories": [
+      "citation"
+    ],
+    "fa": "تحلیل استنادی مقالات PubMed",
+    "en": "Citation analysis for PubMed articles",
+    "url": "https://icite.od.nih.gov/",
+    "longFaUrl": "data/content/icite/icite.fa.md",
+    "longEnUrl": "data/content/icite/icite.en.md"
+  },
+  {
+    "id": "scichina",
+    "name": "SciChina",
+    "categories": [
+      "citation"
+    ],
+    "fa": "پایگاه مقالات علمی چین",
+    "en": "Chinese scientific literature platform",
+    "url": "https://www.scichina.com/",
+    "longFaUrl": "data/content/scichina/scichina.fa.md",
+    "longEnUrl": "data/content/scichina/scichina.en.md"
+  },
+  {
+    "id": "kci",
+    "name": "KCI (Korea Citation Index)",
+    "categories": [
+      "citation"
+    ],
+    "fa": "نمایه استنادی کره",
+    "en": "Korean Citation Index",
+    "url": "https://www.kci.go.kr/",
+    "longFaUrl": "data/content/kci/kci.fa.md",
+    "longEnUrl": "data/content/kci/kci.en.md"
+  },
+  {
+    "id": "elibrary-ru",
+    "name": "eLIBRARY.RU",
+    "categories": [
+      "citation",
+      "literature"
+    ],
+    "fa": "کتابخانه علمی و نمایه استنادی روسیه",
+    "en": "Russian scientific library and citation index",
+    "url": "https://elibrary.ru/",
+    "longFaUrl": "data/content/elibrary-ru/elibrary-ru.fa.md",
+    "longEnUrl": "data/content/elibrary-ru/elibrary-ru.en.md"
+  },
+  {
+    "id": "bmj-best-practice",
+    "name": "BMJ Best Practice",
+    "categories": [
+      "evidence",
+      "decision_support"
+    ],
+    "fa": "راهنمای تشخیص و درمان مبتنی بر شواهد",
+    "en": "Evidence-based diagnosis and treatment guidance",
+    "url": "https://bestpractice.bmj.com/",
+    "longFaUrl": "data/content/bmj-best-practice/bmj-best-practice.fa.md",
+    "longEnUrl": "data/content/bmj-best-practice/bmj-best-practice.en.md"
+  },
+  {
+    "id": "dynamed",
+    "name": "DynaMed",
+    "categories": [
+      "evidence",
+      "decision_support"
+    ],
+    "fa": "مرجع بالینی مبتنی بر شواهد",
+    "en": "Evidence-based clinical reference",
+    "url": "https://www.dynamed.com/",
+    "longFaUrl": "data/content/dynamed/dynamed.fa.md",
+    "longEnUrl": "data/content/dynamed/dynamed.en.md"
+  },
+  {
+    "id": "jbi",
+    "name": "JBI",
+    "categories": [
+      "evidence"
+    ],
+    "fa": "مرکز شواهد و مرور نظام‌مند مؤسسه جوانا بریگز",
+    "en": "Joanna Briggs Institute evidence synthesis",
+    "url": "https://jbi.global/",
+    "longFaUrl": "data/content/jbi/jbi.fa.md",
+    "longEnUrl": "data/content/jbi/jbi.en.md"
+  },
+  {
+    "id": "epistemonikos",
+    "name": "Epistemonikos",
+    "categories": [
+      "evidence"
+    ],
+    "fa": "پایگاه مرورهای نظام‌مند پزشکی",
+    "en": "Database of systematic reviews",
+    "url": "https://www.epistemonikos.org/",
+    "longFaUrl": "data/content/epistemonikos/epistemonikos.fa.md",
+    "longEnUrl": "data/content/epistemonikos/epistemonikos.en.md"
+  },
+  {
+    "id": "nice",
+    "name": "NICE Guidance",
+    "categories": [
+      "guidelines"
+    ],
+    "fa": "راهنماهای بالینی بریتانیا",
+    "en": "UK clinical guidance",
+    "url": "https://www.nice.org.uk/guidance",
+    "longFaUrl": "data/content/nice/nice.fa.md",
+    "longEnUrl": "data/content/nice/nice.en.md"
+  },
+  {
+    "id": "ahrq",
+    "name": "AHRQ",
+    "categories": [
+      "guidelines"
+    ],
+    "fa": "آژانس پژوهش و کیفیت مراقبت سلامت آمریکا",
+    "en": "US Agency for Healthcare Research and Quality",
+    "url": "https://www.ahrq.gov/",
+    "longFaUrl": "data/content/ahrq/ahrq.fa.md",
+    "longEnUrl": "data/content/ahrq/ahrq.en.md"
+  },
+  {
+    "id": "who",
+    "name": "WHO",
+    "categories": [
+      "guidelines",
+      "consumer"
+    ],
+    "fa": "راهنماها و اطلاعات سازمان جهانی بهداشت",
+    "en": "WHO guidelines and health topics",
+    "url": "https://www.who.int/",
+    "longFaUrl": "data/content/who/who.fa.md",
+    "longEnUrl": "data/content/who/who.en.md"
+  },
+  {
+    "id": "cdc",
+    "name": "CDC",
+    "categories": [
+      "guidelines",
+      "consumer"
+    ],
+    "fa": "راهنماها و اطلاعات مراکز کنترل بیماری آمریکا",
+    "en": "CDC guidelines and health topics",
+    "url": "https://www.cdc.gov/",
+    "longFaUrl": "data/content/cdc/cdc.fa.md",
+    "longEnUrl": "data/content/cdc/cdc.en.md"
+  },
+  {
+    "id": "ecdc",
+    "name": "ECDC",
+    "categories": [
+      "guidelines"
+    ],
+    "fa": "گزارش‌ها و داده‌های مرکز کنترل بیماری اروپا",
+    "en": "European CDC publications and data",
+    "url": "https://www.ecdc.europa.eu/en/publications-data",
+    "longFaUrl": "data/content/ecdc/ecdc.fa.md",
+    "longEnUrl": "data/content/ecdc/ecdc.en.md"
+  },
+  {
+    "id": "uspstf",
+    "name": "USPSTF",
+    "categories": [
+      "guidelines"
+    ],
+    "fa": "توصیه‌های غربالگری و پیشگیری آمریکا",
+    "en": "US Preventive Services Task Force recommendations",
+    "url": "https://www.uspreventiveservicestaskforce.org/",
+    "longFaUrl": "data/content/uspstf/uspstf.fa.md",
+    "longEnUrl": "data/content/uspstf/uspstf.en.md"
+  },
+  {
+    "id": "sign",
+    "name": "SIGN",
+    "categories": [
+      "guidelines"
+    ],
+    "fa": "راهنماهای بالینی اسکاتلند",
+    "en": "Scottish Intercollegiate Guidelines Network",
+    "url": "https://www.sign.ac.uk/",
+    "longFaUrl": "data/content/sign/sign.fa.md",
+    "longEnUrl": "data/content/sign/sign.en.md"
+  },
+  {
+    "id": "gin",
+    "name": "Guidelines International Network",
+    "categories": [
+      "guidelines"
+    ],
+    "fa": "شبکه بین‌المللی راهنماهای بالینی",
+    "en": "International guidelines library and network",
+    "url": "https://g-i-n.net/",
+    "longFaUrl": "data/content/gin/gin.fa.md",
+    "longEnUrl": "data/content/gin/gin.en.md"
+  },
+  {
+    "id": "joule",
+    "name": "Joule (CMA)",
+    "categories": [
+      "guidelines"
+    ],
+    "fa": "منابع و راهنماهای انجمن پزشکی کانادا",
+    "en": "Canadian Medical Association resources",
+    "url": "https://joulecma.ca/",
+    "longFaUrl": "data/content/joule/joule.fa.md",
+    "longEnUrl": "data/content/joule/joule.en.md"
+  },
+  {
+    "id": "acp",
+    "name": "ACP Guidelines",
+    "categories": [
+      "guidelines"
+    ],
+    "fa": "راهنماهای بالینی کالج پزشکان آمریکا",
+    "en": "American College of Physicians guidelines",
+    "url": "https://www.acponline.org/clinical-information/guidelines",
+    "longFaUrl": "data/content/acp/acp.fa.md",
+    "longEnUrl": "data/content/acp/acp.en.md"
+  },
+  {
+    "id": "idsa",
+    "name": "IDSA Guidelines",
+    "categories": [
+      "guidelines"
+    ],
+    "fa": "راهنماهای بیماری‌های عفونی",
+    "en": "Infectious Diseases Society of America guidelines",
+    "url": "https://www.idsociety.org/practice-guideline/",
+    "longFaUrl": "data/content/idsa/idsa.fa.md",
+    "longEnUrl": "data/content/idsa/idsa.en.md"
+  },
+  {
+    "id": "nccn",
+    "name": "NCCN Guidelines",
+    "categories": [
+      "guidelines"
+    ],
+    "fa": "راهنماهای بالینی سرطان",
+    "en": "Clinical practice guidelines in oncology",
+    "url": "https://www.nccn.org/guidelines",
+    "longFaUrl": "data/content/nccn/nccn.fa.md",
+    "longEnUrl": "data/content/nccn/nccn.en.md"
+  },
+  {
+    "id": "asco",
+    "name": "ASCO Guidelines",
+    "categories": [
+      "guidelines"
+    ],
+    "fa": "راهنماهای انجمن آمریکایی انکولوژی بالینی",
+    "en": "ASCO oncology guidelines",
+    "url": "https://www.asco.org/guidelines",
+    "longFaUrl": "data/content/asco/asco.fa.md",
+    "longEnUrl": "data/content/asco/asco.en.md"
+  },
+  {
+    "id": "mayoclinic",
+    "name": "Mayo Clinic",
+    "categories": [
+      "consumer"
+    ],
+    "fa": "اطلاعات بیماری‌ها و درمان‌ها برای عموم",
+    "en": "Patient information on diseases and treatments",
+    "url": "https://www.mayoclinic.org/",
+    "longFaUrl": "data/content/mayoclinic/mayoclinic.fa.md",
+    "longEnUrl": "data/content/mayoclinic/mayoclinic.en.md"
+  },
+  {
+    "id": "nhs",
+    "name": "NHS",
+    "categories": [
+      "consumer"
+    ],
+    "fa": "اطلاعات سلامت سرویس ملی بهداشت بریتانیا",
+    "en": "UK National Health Service information",
+    "url": "https://www.nhs.uk/",
+    "longFaUrl": "data/content/nhs/nhs.fa.md",
+    "longEnUrl": "data/content/nhs/nhs.en.md"
+  },
+  {
+    "id": "clevelandclinic",
+    "name": "Cleveland Clinic Health Library",
+    "categories": [
+      "consumer"
+    ],
+    "fa": "کتابخانه سلامت کلینیک کلیولند",
+    "en": "Cleveland Clinic health library",
+    "url": "https://my.clevelandclinic.org/health",
+    "longFaUrl": "data/content/clevelandclinic/clevelandclinic.fa.md",
+    "longEnUrl": "data/content/clevelandclinic/clevelandclinic.en.md"
+  },
+  {
+    "id": "hopkins",
+    "name": "Johns Hopkins Medicine Health",
+    "categories": [
+      "consumer"
+    ],
+    "fa": "اطلاعات سلامت جانز هاپکینز",
+    "en": "Johns Hopkins health information",
+    "url": "https://www.hopkinsmedicine.org/health",
+    "longFaUrl": "data/content/hopkins/hopkins.fa.md",
+    "longEnUrl": "data/content/hopkins/hopkins.en.md"
+  },
+  {
+    "id": "cancergov",
+    "name": "National Cancer Institute",
+    "categories": [
+      "consumer"
+    ],
+    "fa": "اطلاعات سرطان از مؤسسه ملی سرطان آمریکا",
+    "en": "Cancer information from the US NCI",
+    "url": "https://www.cancer.gov/",
+    "longFaUrl": "data/content/cancergov/cancergov.fa.md",
+    "longEnUrl": "data/content/cancergov/cancergov.en.md"
+  },
+  {
+    "id": "niddk",
+    "name": "NIDDK Health Information",
+    "categories": [
+      "consumer"
+    ],
+    "fa": "اطلاعات دیابت، گوارش و بیماری‌های کلیوی",
+    "en": "Diabetes, digestive and kidney health information",
+    "url": "https://www.niddk.nih.gov/health-information",
+    "longFaUrl": "data/content/niddk/niddk.fa.md",
+    "longEnUrl": "data/content/niddk/niddk.en.md"
+  },
+  {
+    "id": "nhlbi",
+    "name": "NHLBI Health",
+    "categories": [
+      "consumer"
+    ],
+    "fa": "اطلاعات سلامت قلب، ریه و خون",
+    "en": "Heart, lung and blood health information",
+    "url": "https://www.nhlbi.nih.gov/health",
+    "longFaUrl": "data/content/nhlbi/nhlbi.fa.md",
+    "longEnUrl": "data/content/nhlbi/nhlbi.en.md"
+  },
+  {
+    "id": "ninds",
+    "name": "NINDS Health Information",
+    "categories": [
+      "consumer"
+    ],
+    "fa": "اطلاعات بیماری‌های مغز و اعصاب",
+    "en": "Neurological disorders information",
+    "url": "https://www.ninds.nih.gov/health-information",
+    "longFaUrl": "data/content/ninds/ninds.fa.md",
+    "longEnUrl": "data/content/ninds/ninds.en.md"
+  },
+  {
+    "id": "ods",
+    "name": "NIH Office of Dietary Supplements",
+    "categories": [
+      "consumer"
+    ],
+    "fa": "اطلاعات مکمل‌های غذایی",
+    "en": "Dietary supplement fact sheets",
+    "url": "https://ods.od.nih.gov/",
+    "longFaUrl": "data/content/ods/ods.fa.md",
+    "longEnUrl": "data/content/ods/ods.en.md"
+  },
+  {
+    "id": "betterhealth",
+    "name": "Better Health Channel",
+    "categories": [
+      "consumer"
+    ],
+    "fa": "اطلاعات سلامت ایالت ویکتوریا (استرالیا)",
+    "en": "Victoria (Australia) health information",
+    "url": "https://www.betterhealth.vic.gov.au/",
+    "longFaUrl": "data/content/betterhealth/betterhealth.fa.md",
+    "longEnUrl": "data/content/betterhealth/betterhealth.en.md"
+  },
+  {
+    "id": "healthdirect",
+    "name": "Healthdirect Australia",
+    "categories": [
+      "consumer"
+    ],
+    "fa": "اطلاعات سلامت دولت استرالیا",
+    "en": "Australian government health information",
+    "url": "https://www.healthdirect.gov.au/",
+    "longFaUrl": "data/content/healthdirect/healthdirect.fa.md",
+    "longEnUrl": "data/content/healthdirect/healthdirect.en.md"
+  },
+  {
+    "id": "myhealthalberta",
+    "name": "MyHealth.Alberta",
+    "categories": [
+      "consumer"
+    ],
+    "fa": "اطلاعات سلامت ایالت آلبرتا (کانادا)",
+    "en": "Alberta (Canada) health information",
+    "url": "https://myhealth.alberta.ca/",
+    "longFaUrl": "data/content/myhealthalberta/myhealthalberta.fa.md",
+    "longEnUrl": "data/content/myhealthalberta/myhealthalberta.en.md"
+  },
+  {
+    "id": "familydoctor",
+    "name": "FamilyDoctor.org",
+    "categories": [
+      "consumer"
+    ],
+    "fa": "اطلاعات سلامت خانواده از انجمن پزشکان خانواده آمریکا",
+    "en": "Family health information from AAFP",
+    "url": "https://familydoctor.org/",
+    "longFaUrl": "data/content/familydoctor/familydoctor.fa.md",
+    "longEnUrl": "data/content/familydoctor/familydoctor.en.md"
+  },
+  {
+    "id": "merckmanual",
+    "name": "Merck Manual (Consumer)",
+    "categories": [
+      "consumer"
+    ],
+    "fa": "راهنمای پزشکی مرک برای عموم",
+    "en": "Merck Manual consumer version",
+    "url": "https://www.merckmanuals.com/home",
+    "longFaUrl": "data/content/merckmanual/merckmanual.fa.md",
+    "longEnUrl": "data/content/merckmanual/merckmanual.en.md"
+  },
+  {
+    "id": "kidshealth",
+    "name": "KidsHealth",
+    "categories": [
+      "consumer"
+    ],
+    "fa": "اطلاعات سلامت کودکان و نوجوانان",
+    "en": "Children's health information",
+    "url": "https://kidshealth.org/",
+    "longFaUrl": "data/content/kidshealth/kidshealth.fa.md",
+    "longEnUrl": "data/content/kidshealth/kidshealth.en.md"
+  },
+  {
+    "id": "ut-journals",
+    "name": "مجلات دانشگاه تهران",
+    "categories": [
+      "iranian"
+    ],
+    "fa": "پورتال مجلات علمی دانشگاه تهران",
+    "en": "University of Tehran journals portal",
+    "url": "https://journals.ut.ac.ir/",
+    "longFaUrl": "data/content/ut-journals/ut-journals.fa.md",
+    "longEnUrl": "data/content/ut-journals/ut-journals.en.md"
+  },
+  {
+    "id": "magiran",
+    "name": "Magiran",
+    "categories": [
+      "iranian"
+    ],
+    "fa": "بانک اطلاعات نشریات کشور",
+    "en": "Iranian periodicals database",
+    "url": "http://www.magiran.com/",
+    "longFaUrl": "data/content/magiran/magiran.fa.md",
+    "longEnUrl": "data/content/magiran/magiran.en.md"
+  },
+  {
+    "id": "ut-library",
+    "name": "منابع الکترونیکی کتابخانه دانشگاه تهران",
+    "categories": [
+      "iranian"
+    ],
+    "fa": "دسترسی به پایگاه‌های اطلاعاتی کتابخانه مرکزی دانشگاه تهران",
+    "en": "University of Tehran library e-resources",
+    "url": "https://library.ut.ac.ir/fa/page/9134",
+    "longFaUrl": "data/content/ut-library/ut-library.fa.md",
+    "longEnUrl": "data/content/ut-library/ut-library.en.md"
+  },
+  {
+    "id": "noormags",
+    "name": "Noormags",
+    "categories": [
+      "iranian"
+    ],
+    "fa": "پایگاه مجلات تخصصی نور",
+    "en": "Noor specialized journals database",
+    "url": "https://www.noormags.ir/",
+    "longFaUrl": "data/content/noormags/noormags.fa.md",
+    "longEnUrl": "data/content/noormags/noormags.en.md"
+  },
+  {
+    "id": "noorlib",
+    "name": "Noor Library",
+    "categories": [
+      "iranian"
+    ],
+    "fa": "کتابخانه دیجیتال نور",
+    "en": "Noor digital library",
+    "url": "https://noorlib.ir/",
+    "longFaUrl": "data/content/noorlib/noorlib.fa.md",
+    "longEnUrl": "data/content/noorlib/noorlib.en.md"
+  },
+  {
+    "id": "abrenoor",
+    "name": "Abre Noor",
+    "categories": [
+      "iranian"
+    ],
+    "fa": "سامانه ابر نور",
+    "en": "Noor cloud platform",
+    "url": "https://abrenoor.ir/",
+    "longFaUrl": "data/content/abrenoor/abrenoor.fa.md",
+    "longEnUrl": "data/content/abrenoor/abrenoor.en.md"
+  },
+  {
+    "id": "isc",
+    "name": "ISC",
+    "categories": [
+      "iranian"
+    ],
+    "fa": "پایگاه استنادی علوم جهان اسلام",
+    "en": "Islamic World Science Citation Center",
+    "url": "https://isc.ac/fa",
+    "longFaUrl": "data/content/isc/isc.fa.md",
+    "longEnUrl": "data/content/isc/isc.en.md"
+  },
+  {
+    "id": "sid",
+    "name": "SID",
+    "categories": [
+      "iranian"
+    ],
+    "fa": "پایگاه اطلاعات علمی جهاد دانشگاهی",
+    "en": "Scientific Information Database",
+    "url": "https://www.sid.ir/",
+    "longFaUrl": "data/content/sid/sid.fa.md",
+    "longEnUrl": "data/content/sid/sid.en.md"
+  },
+  {
+    "id": "elmnet",
+    "name": "Elmnet",
+    "categories": [
+      "iranian"
+    ],
+    "fa": "شبکه علمی ایران",
+    "en": "Iranian scientific network",
+    "url": "https://elmnet.ir/",
+    "longFaUrl": "data/content/elmnet/elmnet.fa.md",
+    "longEnUrl": "data/content/elmnet/elmnet.en.md"
+  },
+  {
+    "id": "ganj",
+    "name": "Ganj (IranDoc)",
+    "categories": [
+      "iranian"
+    ],
+    "fa": "پایگاه پایان‌نامه‌ها و رساله‌های ایران",
+    "en": "Iranian theses and dissertations",
+    "url": "https://ganj.irandoc.ac.ir/",
+    "longFaUrl": "data/content/ganj/ganj.fa.md",
+    "longEnUrl": "data/content/ganj/ganj.en.md"
+  },
+  {
+    "id": "dchq",
+    "name": "کتابخانه دیجیتال دچق",
+    "categories": [
+      "iranian"
+    ],
+    "fa": "کتابخانه دیجیتال",
+    "en": "Digital library",
+    "url": "http://lib.dchq.ir/",
+    "longFaUrl": "data/content/dchq/dchq.fa.md",
+    "longEnUrl": "data/content/dchq/dchq.en.md"
+  },
+  {
+    "id": "ngdir",
+    "name": "NGDIR",
+    "categories": [
+      "iranian"
+    ],
+    "fa": "پایگاه ملی داده‌های ایران",
+    "en": "National data portal of Iran",
+    "url": "http://ngdir.ir/",
+    "longFaUrl": "data/content/ngdir/ngdir.fa.md",
+    "longEnUrl": "data/content/ngdir/ngdir.en.md"
+  },
+  {
+    "id": "sciencedirect",
+    "name": "ScienceDirect",
+    "categories": [
+      "multidisciplinary",
+      "literature"
+    ],
+    "fa": "مقالات و کتاب‌های الزویر",
+    "en": "Elsevier journals and books",
+    "url": "https://www.sciencedirect.com/",
+    "longFaUrl": "data/content/sciencedirect/sciencedirect.fa.md",
+    "longEnUrl": "data/content/sciencedirect/sciencedirect.en.md"
+  },
+  {
+    "id": "scinito",
+    "name": "Scinito",
+    "categories": [
+      "multidisciplinary",
+      "ai_discovery"
+    ],
+    "fa": "جستجوی علمی با هوش مصنوعی",
+    "en": "AI-assisted scholarly search",
+    "url": "https://www.scinito.ai/",
+    "longFaUrl": "data/content/scinito/scinito.fa.md",
+    "longEnUrl": "data/content/scinito/scinito.en.md"
+  },
+  {
+    "id": "zendy",
+    "name": "Zendy",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "دسترسی به مقالات و کتاب‌های علمی",
+    "en": "Access to scholarly articles and books",
+    "url": "https://zendy.io/",
+    "longFaUrl": "data/content/zendy/zendy.fa.md",
+    "longEnUrl": "data/content/zendy/zendy.en.md"
+  },
+  {
+    "id": "proquest",
+    "name": "ProQuest",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "پایگاه مقالات، پایان‌نامه‌ها و منابع چندموضوعی",
+    "en": "Articles, theses and multidisciplinary content",
+    "url": "https://www.proquest.com/",
+    "longFaUrl": "data/content/proquest/proquest.fa.md",
+    "longEnUrl": "data/content/proquest/proquest.en.md"
+  },
+  {
+    "id": "sage",
+    "name": "SAGE Journals",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "مجلات انتشارات سیج",
+    "en": "SAGE Publications journals",
+    "url": "https://journals.sagepub.com/",
+    "longFaUrl": "data/content/sage/sage.fa.md",
+    "longEnUrl": "data/content/sage/sage.en.md"
+  },
+  {
+    "id": "wiley",
+    "name": "Wiley Online Library",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "مجلات و کتاب‌های وایلی",
+    "en": "Wiley journals and books",
+    "url": "https://onlinelibrary.wiley.com/",
+    "longFaUrl": "data/content/wiley/wiley.fa.md",
+    "longEnUrl": "data/content/wiley/wiley.en.md"
+  },
+  {
+    "id": "heinonline",
+    "name": "HeinOnline",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "پایگاه منابع حقوقی",
+    "en": "Legal research database",
+    "url": "https://heinonline.org/",
+    "longFaUrl": "data/content/heinonline/heinonline.fa.md",
+    "longEnUrl": "data/content/heinonline/heinonline.en.md"
+  },
+  {
+    "id": "nature",
+    "name": "Nature",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "مجلات گروه نیچر",
+    "en": "Nature Portfolio journals",
+    "url": "https://www.nature.com/",
+    "longFaUrl": "data/content/nature/nature.fa.md",
+    "longEnUrl": "data/content/nature/nature.en.md"
+  },
+  {
+    "id": "tandf",
+    "name": "Taylor & Francis Online",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "مجلات تیلور و فرانسیس",
+    "en": "Taylor & Francis journals",
+    "url": "https://www.tandfonline.com/",
+    "longFaUrl": "data/content/tandf/tandf.fa.md",
+    "longEnUrl": "data/content/tandf/tandf.en.md"
+  },
+  {
+    "id": "ieee",
+    "name": "IEEE",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "مقالات مهندسی برق و رایانه",
+    "en": "Electrical engineering and computing literature",
+    "url": "https://www.ieee.org/",
+    "longFaUrl": "data/content/ieee/ieee.fa.md",
+    "longEnUrl": "data/content/ieee/ieee.en.md"
+  },
+  {
+    "id": "onepetro",
+    "name": "OnePetro",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "منابع مهندسی نفت و گاز",
+    "en": "Oil and gas engineering literature",
+    "url": "https://onepetro.org/",
+    "longFaUrl": "data/content/onepetro/onepetro.fa.md",
+    "longEnUrl": "data/content/onepetro/onepetro.en.md"
+  },
+  {
+    "id": "cambridge",
+    "name": "Cambridge Core",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "مجلات و کتاب‌های انتشارات کمبریج",
+    "en": "Cambridge University Press journals and books",
+    "url": "https://www.cambridge.org/core",
+    "longFaUrl": "data/content/cambridge/cambridge.fa.md",
+    "longEnUrl": "data/content/cambridge/cambridge.en.md"
+  },
+  {
+    "id": "emerald",
+    "name": "Emerald Insight",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "مجلات مدیریت و علوم اجتماعی امرالد",
+    "en": "Emerald management and social science journals",
+    "url": "https://www.emerald.com/insight/",
+    "longFaUrl": "data/content/emerald/emerald.fa.md",
+    "longEnUrl": "data/content/emerald/emerald.en.md"
+  },
+  {
+    "id": "ebscohost",
+    "name": "EBSCOhost",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "پلتفرم جستجوی پایگاه‌های EBSCO",
+    "en": "EBSCOhost research platform",
+    "url": "http://web.a.ebscohost.com/",
+    "longFaUrl": "data/content/ebscohost/ebscohost.fa.md",
+    "longEnUrl": "data/content/ebscohost/ebscohost.en.md"
+  },
+  {
+    "id": "almanhal",
+    "name": "Al Manhal",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "پایگاه منابع علمی عربی",
+    "en": "Arabic scholarly content platform",
+    "url": "https://platform.almanhal.com/",
+    "longFaUrl": "data/content/almanhal/almanhal.fa.md",
+    "longEnUrl": "data/content/almanhal/almanhal.en.md"
+  },
+  {
+    "id": "bioone",
+    "name": "BioOne",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "مجلات علوم زیستی و محیط زیست",
+    "en": "Biological and environmental science journals",
+    "url": "https://bioone.org/",
+    "longFaUrl": "data/content/bioone/bioone.fa.md",
+    "longEnUrl": "data/content/bioone/bioone.en.md"
+  },
+  {
+    "id": "metapress",
+    "name": "Metapress",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "پلتفرم انتشار مقالات علمی",
+    "en": "Scholarly publishing platform",
+    "url": "https://metapress.com/",
+    "longFaUrl": "data/content/metapress/metapress.fa.md",
+    "longEnUrl": "data/content/metapress/metapress.en.md"
+  },
+  {
+    "id": "jvme",
+    "name": "JVME",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "مجله آموزش دامپزشکی",
+    "en": "Journal of Veterinary Medical Education",
+    "url": "https://jvme.utpjournals.press/loi/jvme",
+    "longFaUrl": "data/content/jvme/jvme.fa.md",
+    "longEnUrl": "data/content/jvme/jvme.en.md"
+  },
+  {
+    "id": "avma",
+    "name": "AVMA Journals",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "مجلات انجمن دامپزشکی آمریکا",
+    "en": "American Veterinary Medical Association journals",
+    "url": "https://avmajournals.avma.org/",
+    "longFaUrl": "data/content/avma/avma.fa.md",
+    "longEnUrl": "data/content/avma/avma.en.md"
+  },
+  {
+    "id": "thieme",
+    "name": "Thieme",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "مجلات و کتاب‌های پزشکی تیمه",
+    "en": "Thieme medical journals and books",
+    "url": "https://www.thieme.de/",
+    "longFaUrl": "data/content/thieme/thieme.fa.md",
+    "longEnUrl": "data/content/thieme/thieme.en.md"
+  },
+  {
+    "id": "rsc",
+    "name": "Royal Society of Chemistry",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "مجلات انجمن سلطنتی شیمی",
+    "en": "Royal Society of Chemistry journals",
+    "url": "https://www.rsc.org/",
+    "longFaUrl": "data/content/rsc/rsc.fa.md",
+    "longEnUrl": "data/content/rsc/rsc.en.md"
+  },
+  {
+    "id": "aps",
+    "name": "American Physical Society",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "مجلات انجمن فیزیک آمریکا",
+    "en": "American Physical Society journals",
+    "url": "https://www.aps.org/",
+    "longFaUrl": "data/content/aps/aps.fa.md",
+    "longEnUrl": "data/content/aps/aps.en.md"
+  },
+  {
+    "id": "bva",
+    "name": "BVA Journals",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "مجلات انجمن دامپزشکی بریتانیا",
+    "en": "British Veterinary Association journals",
+    "url": "https://bvajournals.onlinelibrary.wiley.com/",
+    "longFaUrl": "data/content/bva/bva.fa.md",
+    "longEnUrl": "data/content/bva/bva.en.md"
+  },
+  {
+    "id": "jaaha",
+    "name": "JAAHA",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "مجله انجمن بیمارستان‌های حیوانات آمریکا",
+    "en": "Journal of the American Animal Hospital Association",
+    "url": "https://meridian.allenpress.com/jaaha",
+    "longFaUrl": "data/content/jaaha/jaaha.fa.md",
+    "longEnUrl": "data/content/jaaha/jaaha.en.md"
+  },
+  {
+    "id": "imf-elibrary",
+    "name": "IMF eLibrary",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "منابع اقتصادی صندوق بین‌المللی پول",
+    "en": "IMF economic publications",
+    "url": "https://www.elibrary.imf.org/",
+    "longFaUrl": "data/content/imf-elibrary/imf-elibrary.fa.md",
+    "longEnUrl": "data/content/imf-elibrary/imf-elibrary.en.md"
+  },
+  {
+    "id": "ncpssd",
+    "name": "NCPSSD",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "پایگاه ملی علوم اجتماعی چین",
+    "en": "Chinese national social science database",
+    "url": "https://en.ncpssd.cn/",
+    "longFaUrl": "data/content/ncpssd/ncpssd.fa.md",
+    "longEnUrl": "data/content/ncpssd/ncpssd.en.md"
+  },
+  {
+    "id": "ijrcm",
+    "name": "IJRCM",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "مجله بین‌المللی پژوهش در تجارت و مدیریت",
+    "en": "International Journal of Research in Commerce & Management",
+    "url": "https://www.ijrcm.org.in/",
+    "longFaUrl": "data/content/ijrcm/ijrcm.fa.md",
+    "longEnUrl": "data/content/ijrcm/ijrcm.en.md"
+  },
+  {
+    "id": "omics",
+    "name": "OMICS International",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "مجلات انتشارات اومیکس",
+    "en": "OMICS International journals",
+    "url": "https://www.omicsonline.org/",
+    "longFaUrl": "data/content/omics/omics.fa.md",
+    "longEnUrl": "data/content/omics/omics.en.md"
+  },
+  {
+    "id": "zednee",
+    "name": "Zednee",
+    "categories": [
+      "multidisciplinary"
+    ],
+    "fa": "پلتفرم دسترسی به منابع علمی",
+    "en": "Scholarly resource access platform",
+    "url": "https://app.zednee.io/",
+    "longFaUrl": "data/content/zednee/zednee.fa.md",
+    "longEnUrl": "data/content/zednee/zednee.en.md"
+  },
+  {
+    "id": "rayyan",
+    "name": "Rayyan",
+    "categories": [
+      "systematic_tools"
+    ],
+    "fa": "غربالگری مقالات در مرور نظام‌مند",
+    "en": "Screening tool for systematic reviews",
+    "url": "https://www.rayyan.ai",
+    "longFaUrl": "data/content/rayyan/rayyan.fa.md",
+    "longEnUrl": "data/content/rayyan/rayyan.en.md"
+  },
+  {
+    "id": "covidence",
+    "name": "Covidence",
+    "categories": [
+      "systematic_tools"
+    ],
+    "fa": "مدیریت مراحل مرور نظام‌مند",
+    "en": "Systematic review management",
+    "url": "https://www.covidence.org/",
+    "longFaUrl": "data/content/covidence/covidence.fa.md",
+    "longEnUrl": "data/content/covidence/covidence.en.md"
+  },
+  {
+    "id": "eppi-reviewer",
+    "name": "EPPI-Reviewer",
+    "categories": [
+      "systematic_tools"
+    ],
+    "fa": "نرم‌افزار سنتز شواهد",
+    "en": "Evidence synthesis software",
+    "url": "https://eppi.ioe.ac.uk/cms/er4/",
+    "longFaUrl": "data/content/eppi-reviewer/eppi-reviewer.fa.md",
+    "longEnUrl": "data/content/eppi-reviewer/eppi-reviewer.en.md"
+  },
+  {
+    "id": "distillersr",
+    "name": "DistillerSR",
+    "categories": [
+      "systematic_tools"
+    ],
+    "fa": "نرم‌افزار مرور نظام‌مند",
+    "en": "Systematic review software",
+    "url": "https://www.distillersr.com",
+    "longFaUrl": "data/content/distillersr/distillersr.fa.md",
+    "longEnUrl": "data/content/distillersr/distillersr.en.md"
+  },
+  {
+    "id": "revman",
+    "name": "RevMan",
+    "categories": [
+      "systematic_tools"
+    ],
+    "fa": "نرم‌افزار نگارش مرور کاکرین و متاآنالیز",
+    "en": "Cochrane review authoring and meta-analysis",
+    "url": "https://revman.cochrane.org",
+    "longFaUrl": "data/content/revman/revman.fa.md",
+    "longEnUrl": "data/content/revman/revman.en.md"
+  },
+  {
+    "id": "gradepro",
+    "name": "GRADEpro",
+    "categories": [
+      "systematic_tools"
+    ],
+    "fa": "ارزیابی کیفیت شواهد با رویکرد GRADE",
+    "en": "Evidence quality assessment with GRADE",
+    "url": "https://www.gradepro.org",
+    "longFaUrl": "data/content/gradepro/gradepro.fa.md",
+    "longEnUrl": "data/content/gradepro/gradepro.en.md"
+  },
+  {
+    "id": "magicapp",
+    "name": "MAGICapp",
+    "categories": [
+      "systematic_tools"
+    ],
+    "fa": "تدوین و انتشار راهنماهای بالینی",
+    "en": "Guideline authoring and publishing",
+    "url": "https://magicevidence.org/magicapp",
+    "longFaUrl": "data/content/magicapp/magicapp.fa.md",
+    "longEnUrl": "data/content/magicapp/magicapp.en.md"
+  },
+  {
+    "id": "srdrplus",
+    "name": "SRDR+",
+    "categories": [
+      "systematic_tools"
+    ],
+    "fa": "استخراج داده برای مرور نظام‌مند",
+    "en": "Systematic review data extraction",
+    "url": "https://srdrplus.ahrq.gov",
+    "longFaUrl": "data/content/srdrplus/srdrplus.fa.md",
+    "longEnUrl": "data/content/srdrplus/srdrplus.en.md"
+  },
+  {
+    "id": "asreview",
+    "name": "ASReview",
+    "categories": [
+      "systematic_tools",
+      "ai_discovery"
+    ],
+    "fa": "غربالگری مقالات با یادگیری ماشین",
+    "en": "ML-assisted screening for reviews",
+    "url": "https://asreview.nl/",
+    "longFaUrl": "data/content/asreview/asreview.fa.md",
+    "longEnUrl": "data/content/asreview/asreview.en.md"
+  },
+  {
+    "id": "robotreviewer",
+    "name": "RobotReviewer",
+    "categories": [
+      "systematic_tools",
+      "ai_discovery"
+    ],
+    "fa": "ارزیابی خودکار خطای سوگیری در کارآزمایی‌ها",
+    "en": "Automated risk-of-bias assessment of trials",
+    "url": "https://www.robotreviewer.net",
+    "longFaUrl": "data/content/robotreviewer/robotreviewer.fa.md",
+    "longEnUrl": "data/content/robotreviewer/robotreviewer.en.md"
+  },
+  {
+    "id": "elicit",
+    "name": "Elicit",
+    "categories": [
+      "ai_discovery"
+    ],
+    "fa": "دستیار هوش مصنوعی برای مرور مقالات",
+    "en": "AI research assistant for literature review",
+    "url": "https://elicit.com",
+    "longFaUrl": "data/content/elicit/elicit.fa.md",
+    "longEnUrl": "data/content/elicit/elicit.en.md"
+  },
+  {
+    "id": "consensus",
+    "name": "Consensus",
+    "categories": [
+      "ai_discovery"
+    ],
+    "fa": "موتور جستجوی پاسخ‌محور مبتنی بر مقالات",
+    "en": "AI search engine answering from research papers",
+    "url": "https://consensus.app",
+    "longFaUrl": "data/content/consensus/consensus.fa.md",
+    "longEnUrl": "data/content/consensus/consensus.en.md"
+  },
+  {
+    "id": "scite",
+    "name": "Scite",
+    "categories": [
+      "ai_discovery",
+      "citation"
+    ],
+    "fa": "بررسی نحوه استناد (تأییدی/مخالف) به مقالات",
+    "en": "Smart citations showing supporting/contrasting mentions",
+    "url": "https://scite.ai/",
+    "longFaUrl": "data/content/scite/scite.fa.md",
+    "longEnUrl": "data/content/scite/scite.en.md"
+  },
+  {
+    "id": "researchrabbit",
+    "name": "ResearchRabbit",
+    "categories": [
+      "ai_discovery"
+    ],
+    "fa": "کشف مقالات مرتبط و نقشه استنادی",
+    "en": "Paper discovery and citation mapping",
+    "url": "https://www.researchrabbit.ai",
+    "longFaUrl": "data/content/researchrabbit/researchrabbit.fa.md",
+    "longEnUrl": "data/content/researchrabbit/researchrabbit.en.md"
+  },
+  {
+    "id": "litmaps",
+    "name": "Litmaps",
+    "categories": [
+      "ai_discovery"
+    ],
+    "fa": "نقشه‌سازی ادبیات پژوهش",
+    "en": "Literature mapping",
+    "url": "https://www.litmaps.com",
+    "longFaUrl": "data/content/litmaps/litmaps.fa.md",
+    "longEnUrl": "data/content/litmaps/litmaps.en.md"
+  },
+  {
+    "id": "connectedpapers",
+    "name": "Connected Papers",
+    "categories": [
+      "ai_discovery"
+    ],
+    "fa": "گراف بصری مقالات مرتبط",
+    "en": "Visual graph of related papers",
+    "url": "https://www.connectedpapers.com",
+    "longFaUrl": "data/content/connectedpapers/connectedpapers.fa.md",
+    "longEnUrl": "data/content/connectedpapers/connectedpapers.en.md"
+  },
+  {
+    "id": "evidencehunt",
+    "name": "Evidence Hunt",
+    "categories": [
+      "ai_discovery",
+      "evidence"
+    ],
+    "fa": "جستجوی شواهد پزشکی با هوش مصنوعی",
+    "en": "AI-powered medical evidence search",
+    "url": "https://evidencehunt.com",
+    "longFaUrl": "data/content/evidencehunt/evidencehunt.fa.md",
+    "longEnUrl": "data/content/evidencehunt/evidencehunt.en.md"
+  },
+  {
+    "id": "uptodate",
+    "name": "UpToDate",
+    "categories": [
+      "decision_support",
+      "evidence"
+    ],
+    "fa": "مرجع بالینی مبتنی بر شواهد",
+    "en": "Evidence-based clinical decision support",
+    "url": "https://www.uptodate.com",
+    "longFaUrl": "data/content/uptodate/uptodate.fa.md",
+    "longEnUrl": "data/content/uptodate/uptodate.en.md"
+  },
+  {
+    "id": "amboss",
+    "name": "AMBOSS",
+    "categories": [
+      "decision_support"
+    ],
+    "fa": "مرجع پزشکی و آموزش بالینی",
+    "en": "Medical knowledge and clinical reference",
+    "url": "https://www.amboss.com",
+    "longFaUrl": "data/content/amboss/amboss.fa.md",
+    "longEnUrl": "data/content/amboss/amboss.en.md"
+  },
+  {
+    "id": "visualdx",
+    "name": "VisualDx",
+    "categories": [
+      "decision_support"
+    ],
+    "fa": "کمک تشخیص بصری بیماری‌ها",
+    "en": "Visual diagnostic decision support",
+    "url": "https://www.visualdx.com",
+    "longFaUrl": "data/content/visualdx/visualdx.fa.md",
+    "longEnUrl": "data/content/visualdx/visualdx.en.md"
+  },
+  {
+    "id": "isabel",
+    "name": "Isabel Healthcare",
+    "categories": [
+      "decision_support"
+    ],
+    "fa": "کمک تشخیص افتراقی",
+    "en": "Differential diagnosis decision support",
+    "url": "https://www.isabelhealthcare.com",
+    "longFaUrl": "data/content/isabel/isabel.fa.md",
+    "longEnUrl": "data/content/isabel/isabel.en.md"
+  },
+  {
+    "id": "mdcalc",
+    "name": "MDCalc",
+    "categories": [
+      "decision_support"
+    ],
+    "fa": "ماشین‌حساب‌ها و امتیازدهی‌های بالینی",
+    "en": "Clinical calculators and scoring tools",
+    "url": "https://www.mdcalc.com",
+    "longFaUrl": "data/content/mdcalc/mdcalc.fa.md",
+    "longEnUrl": "data/content/mdcalc/mdcalc.en.md"
+  },
+  {
+    "id": "openevidence",
+    "name": "OpenEvidence",
+    "categories": [
+      "decision_support",
+      "ai_discovery"
+    ],
+    "fa": "پاسخ به سؤالات بالینی مبتنی بر شواهد با هوش مصنوعی",
+    "en": "AI answers to clinical questions with evidence",
+    "url": "https://www.openevidence.com",
+    "longFaUrl": "data/content/openevidence/openevidence.fa.md",
+    "longEnUrl": "data/content/openevidence/openevidence.en.md"
+  },
+  {
+    "id": "glass",
+    "name": "Glass Health",
+    "categories": [
+      "decision_support",
+      "ai_discovery"
+    ],
+    "fa": "دستیار هوش مصنوعی برای استدلال بالینی",
+    "en": "AI clinical reasoning assistant",
+    "url": "https://glass.health",
+    "longFaUrl": "data/content/glass/glass.fa.md",
+    "longEnUrl": "data/content/glass/glass.en.md"
+  },
+  {
+    "id": "nabla",
+    "name": "Nabla",
+    "categories": [
+      "decision_support",
+      "ai_discovery"
+    ],
+    "fa": "دستیار هوش مصنوعی برای مستندسازی بالینی",
+    "en": "AI assistant for clinical documentation",
+    "url": "https://www.nabla.com",
+    "longFaUrl": "data/content/nabla/nabla.fa.md",
+    "longEnUrl": "data/content/nabla/nabla.en.md"
+  },
+  {
+    "id": "aidoc",
+    "name": "Aidoc",
+    "categories": [
+      "decision_support",
+      "ai_discovery"
+    ],
+    "fa": "هوش مصنوعی برای تصویربرداری پزشکی",
+    "en": "AI for medical imaging",
+    "url": "https://www.aidoc.com",
+    "longFaUrl": "data/content/aidoc/aidoc.fa.md",
+    "longEnUrl": "data/content/aidoc/aidoc.en.md"
+  },
+  {
+    "id": "qure",
+    "name": "Qure.ai",
+    "categories": [
+      "decision_support",
+      "ai_discovery"
+    ],
+    "fa": "هوش مصنوعی برای تفسیر تصاویر پزشکی",
+    "en": "AI for medical image interpretation",
+    "url": "https://www.qure.ai",
+    "longFaUrl": "data/content/qure/qure.fa.md",
+    "longEnUrl": "data/content/qure/qure.en.md"
   }
 ]

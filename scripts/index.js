@@ -27,9 +27,33 @@ const CATS = {
     fa: "منابع بالینی و پزشکی مبتنی بر شواهد",
     en: "Clinical & Evidence-Based Resources",
   },
+  guidelines: {
+    fa: "راهنماهای بالینی و سازمان‌های سلامت",
+    en: "Clinical Guidelines & Health Agencies",
+  },
+  decision_support: {
+    fa: "منابع بالینی و تصمیم‌یارهای مبتنی بر شواهد",
+    en: "Clinical Decision Support Tools",
+  },
   consumer: {
     fa: "اطلاعات سلامت معتبر برای عموم",
     en: "Reliable Public Health Information",
+  },
+  systematic_tools: {
+    fa: "نرم‌افزارهای مرور نظام‌مند و ارزیابی شواهد",
+    en: "Systematic Review & Evidence Appraisal Software",
+  },
+  ai_discovery: {
+    fa: "جستجوی شواهد و کشف مقاله با هوش مصنوعی",
+    en: "AI-Powered Evidence & Paper Discovery",
+  },
+  iranian: {
+    fa: "پایگاه‌های ایرانی",
+    en: "Iranian Databases",
+  },
+  multidisciplinary: {
+    fa: "پایگاه‌ها و ناشران چندموضوعی",
+    en: "Multidisciplinary Databases & Publishers",
   },
 };
 
@@ -54,7 +78,8 @@ const CARD_TITLE = "mb-[0.3rem] text-start text-[1.25rem] text-teal";
 const CARD_DESC = "text-[0.95rem] text-mute";
 const GROUP_TITLE =
   "mb-4 border-b border-line pb-2 text-start text-[1.4rem] font-bold text-ink";
-const GRID = "grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-[1.2rem]";
+const GRID =
+  "grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-[1.2rem]";
 
 const chip = (key, label) =>
   `<button type="button" data-cat="${key}" aria-pressed="${activeCat === key}"
