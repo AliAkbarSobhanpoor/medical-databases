@@ -31,7 +31,9 @@ const esc = (s = "") =>
   String(s).replace(
     /[&<>"']/g,
     (c) =>
-      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c],
+      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[
+        c
+      ],
   );
 
 const save = (key, value) => {
@@ -53,9 +55,8 @@ function applyShell() {
   root.dir = lang === "fa" ? "rtl" : "ltr";
   root.dataset.theme = theme;
   $("brand").textContent = SHELL[lang].brand;
-  $("lang").innerHTML =
-    `<b class="${lang === "fa" ? "on" : ""}">FA</b> / <b class="${lang === "en" ? "on" : ""}">EN</b>`;
-  $("theme").textContent = theme === "dark" ? "☀" : "☾";
+  $("lang").textContent = lang === "fa" ? "EN" : "فا";
+  $("theme").innerHTML =`<i class="fa-solid ${theme === "dark" ? "fa-sun" : "fa-moon"}" aria-hidden="true"></i>`;
   $("foot").textContent = SHELL[lang].foot;
 }
 
