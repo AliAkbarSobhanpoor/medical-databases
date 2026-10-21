@@ -60,6 +60,37 @@ async function loadDescription(database, lang) {
   }
 }
 
+// Extract and validate the Aparat embed URL from a pasted embed snippet.
+function aparatSrc(html) {
+  const m = String(html).match(/src=["']([^"']+)["']/);
+  const src = m && m[1];
+  return src && /^https:\/\/www\.aparat\.com\/embed\/\w+\?/.test(src)
+    ? src
+    : null;
+}
+
+// Render videos. Scripts added via innerHTML never run, so create them manually.
+function renderVideos(database) {
+  const box = $("videos");
+  if (!box) return;
+  box.innerHTML = "";
+
+  (database.videos || []).forEach((html, i) => {
+    const src = aparatSrc(html);
+    if (!src) return;
+
+    const id = `aparat-${database.id}-${i}`; // unique per video
+    const wrap = document.createElement("div");
+    wrap.id = id;
+    wrap.className = "w-full";
+    box.appendChild(wrap);
+
+    const script = document.createElement("script");
+    script.src = src.replace(/(data\[rnddiv\]=)[^&]+/, `$1${id}`);
+    wrap.appendChild(script);
+  });
+}
+
 // Render the database detail page.
 function render() {
   applyShell();
@@ -71,14 +102,19 @@ function render() {
 
   document.title = d.name + " | " + SHELL[lang].brand;
 
-  // Persian pages right-align the English title (text-end); English pages left-align it (text-start).
   $("main").innerHTML = `
-    <h1 class="big ${lang === "fa" ? "text-end" : "text-start"}">${esc(d.name)}</h1>
+    <div class="title-row">
+      <h1 class="big ${lang === "fa" ? "text-end" : "text-start"}">${esc(d.name)}</h1>
+      <a class="portal sm ${lang === "fa" ? "[animation-direction:reverse]" : ""}" href="${esc(d.url)}" target="_blank" rel="noopener noreferrer">
+        <span class="txt">${t.lets}</span>
+      </a>
+    </div>
     <hr class="my-6 h-0.5 w-full border-0 bg-gradient-to-r from-gold via-line to-transparent rtl:bg-gradient-to-l" />
     <p class="lead">${esc(lang === "fa" ? d.fa : d.en)}</p>
-    <a class="portal ${lang === "fa" ? "[animation-direction:reverse]" : ""}" href="${esc(d.url)}" target="_blank" rel="noopener noreferrer">
-      <span class="txt">${t.lets}</span>
-    </a>
+
+    ${(d.videos || []).some((html) => aparatSrc(html)) 
+      ? '<div id="videos" class="mt-10 flex w-full flex-col gap-8"></div>' 
+    : ""}
 
     <div
       id="long-description"
@@ -95,12 +131,13 @@ function render() {
       prose-hr:border-line"
     ></div>
 
+
     <a class="back" href="index.html">${t.back}</a>
   `;
 
   loadDescription(d, lang);
+  renderVideos(d);
 }
-
 // Show or hide the back-to-top button when scrolling.
 const totop = $("totop");
 

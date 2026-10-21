@@ -122,7 +122,7 @@ footer {
   align-items: center;
   gap: 1rem;
   width: 100%;
-  padding: 1.2rem 2rem;
+  padding: 0.5rem 2rem;
   border-radius: 5px;
   color: #fff;
   text-decoration: none;
@@ -243,4 +243,37 @@ footer {
 .back {
   color: var(--teal);
   font-weight: 700;
+}
+/* Small button next to the title (keeps the gradient, border, glow, animation) */
+.portal.sm {
+  display: inline-flex;
+  width: auto;
+  min-height: 0;
+  padding: 0.35rem 1.1rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.portal.sm .txt {
+  padding-inline-start: 0;
+}
+.portal.sm:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px #127a8a66;
+}
+
+/* Title row: the h1 bottom margin would push the button out of alignment */
+.title-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  margin-bottom: 2rem;
+}
+.title-row .big {
+  margin: 0;
+}
+
+#videos iframe {
+  width: 100% !important;
 }
