@@ -1210,7 +1210,10 @@
     "en": "Visual graph of related papers",
     "url": "https://www.connectedpapers.com",
     "longFaUrl": "data/content/connectedpapers/connectedpapers.fa.md",
-    "longEnUrl": "data/content/connectedpapers/connectedpapers.en.md"
+    "longEnUrl": "data/content/connectedpapers/connectedpapers.en.md",
+    "videos": [
+      "<div id=\"39149492411\"><script type=\"text/JavaScript\" src=\"https://www.aparat.com/embed/uru1l9b?data[rnddiv]=39149492411&data[responsive]=yes\"></script></div>"
+    ]
   },
   {
     "id": "evidencehunt",

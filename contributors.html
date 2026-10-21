@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contributors | مشارکت‌کنندگان</title>
+    <meta
+      name="description"
+      content="People who contributed to the Medical Databases directory."
+    />
+    <link rel="icon" href="data:," />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;800&family=Source+Serif+4:wght@600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body class="bg-page font-sans leading-[1.8] text-ink">
+    <header
+      class="flex items-center justify-between border-b-[3px] border-gold bg-navy px-[clamp(1rem,4vw,3rem)] py-[0.7rem] text-white"
+    >
+      <a
+        class="flex items-center gap-[0.6rem] text-[1.1rem] font-bold"
+        href="index.html"
+      >
+        <i class="text-gold not-italic">✚</i><span id="brand"></span>
+      </a>
+
+      <div class="flex items-center gap-2">
+        <!-- Project repository -->
+        <a
+          href="https://github.com/AliAkbarSobhanpoor/medical-databases"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub repository"
+          title="GitHub repository"
+          class="relative z-10 flex items-center justify-center rounded-[0.4rem] border border-white/35 p-[0.45rem] hover:border-gold hover:text-gold"
+        >
+          <i class="fa-brands fa-github text-xl" aria-hidden="true"></i>
+        </a>
+
+        <!-- Back to the directory -->
+        <a
+          href="index.html"
+          id="home"
+          aria-label="Home"
+          title="Home"
+          class="relative z-10 flex items-center justify-center rounded-[0.4rem] border border-white/35 p-[0.45rem] hover:border-gold hover:text-gold"
+        >
+          <i class="fa-solid fa-house text-xl" aria-hidden="true"></i>
+        </a>
+
+        <!-- Language and theme controls -->
+        <div
+          class="flex gap-2 [&_b]:font-normal [&_b]:opacity-55 [&_b.on]:font-bold [&_b.on]:text-gold [&_b.on]:opacity-100"
+        >
+          <button
+            id="lang"
+            class="cursor-pointer rounded-[0.4rem] border border-white/35 px-[0.8rem] py-[0.3rem] hover:border-gold"
+          ></button>
+          <button
+            id="theme"
+            aria-label="Theme"
+            class="cursor-pointer rounded-[0.4rem] border border-white/35 px-[0.8rem] py-[0.3rem] hover:border-gold"
+          ></button>
+        </div>
+      </div>
+    </header>
+
+    <section class="mx-auto mt-10 max-w-[1100px] px-4">
+      <h1
+        id="title"
+        class="mb-2 text-[length:clamp(1.6rem,4vw,2.4rem)] leading-[1.3] font-extrabold"
+      ></h1>
+      <p id="intro" class="text-mute"></p>
+    </section>
+
+    <main
+      id="grid"
+      class="mx-auto my-8 grid max-w-[1100px] gap-4 px-4 [grid-template-columns:repeat(auto-fill,minmax(260px,1fr))]"
+    ></main>
+    <p id="none" hidden class="px-4 pb-10 text-center text-mute"></p>
+
+    <footer
+      id="foot"
+      class="border-t border-line p-6 text-center text-[0.85rem] text-mute"
+    ></footer>
+
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/contributors.js" defer></script>
+  </body>
+</html>

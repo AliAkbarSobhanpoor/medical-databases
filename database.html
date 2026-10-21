@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;800&family=Source+Serif+4:wght@600;700&display=swap"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body class="bg-page font-sans leading-[1.8] text-ink">
@@ -21,18 +25,43 @@
       >
         <i class="text-gold not-italic">✚</i><span id="brand"></span>
       </a>
-      <div
-        class="flex gap-2 [&_b]:font-normal [&_b]:opacity-55 [&_b.on]:font-bold [&_b.on]:text-gold [&_b.on]:opacity-100"
-      >
-        <button
-          id="lang"
-          class="cursor-pointer rounded-[0.4rem] border border-white/35 px-[0.8rem] py-[0.3rem] hover:border-gold"
-        ></button>
-        <button
-          id="theme"
-          aria-label="Theme"
-          class="cursor-pointer rounded-[0.4rem] border border-white/35 px-[0.8rem] py-[0.3rem] hover:border-gold"
-        ></button>
+
+      <div class="flex items-center gap-2">
+        <!-- Project repository -->
+        <a
+          href="https://github.com/AliAkbarSobhanpoor/medical-databases"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub repository"
+          title="GitHub repository"
+          class="relative z-10 flex items-center justify-center rounded-[0.4rem] border border-white/35 p-[0.45rem] hover:border-gold hover:text-gold"
+        >
+          <i class="fa-brands fa-github text-xl" aria-hidden="true"></i>
+        </a>
+
+        <!-- Contributors page -->
+        <a
+          href="contributors.html"
+          aria-label="Project contributors"
+          title="Project contributors"
+          class="relative z-10 flex items-center justify-center rounded-[0.4rem] border border-white/35 p-[0.45rem] hover:border-gold hover:text-gold"
+        >
+          <i class="fa-solid fa-users text-xl" aria-hidden="true"></i>
+        </a>
+        <!-- Language and theme controls -->
+        <div
+          class="flex gap-2 [&_b]:font-normal [&_b]:opacity-55 [&_b.on]:font-bold [&_b.on]:text-gold [&_b.on]:opacity-100"
+        >
+          <button
+            id="lang"
+            class="cursor-pointer rounded-[0.4rem] border border-white/35 px-[0.8rem] py-[0.3rem] hover:border-gold"
+          ></button>
+          <button
+            id="theme"
+            aria-label="Theme"
+            class="cursor-pointer rounded-[0.4rem] border border-white/35 px-[0.8rem] py-[0.3rem] hover:border-gold"
+          ></button>
+        </div>
       </div>
     </header>
 

@@ -1,0 +1,38 @@
+[
+  {
+    "fa": {
+      "name": "علی اکبر سبحانپور",
+      "degree": "کارشناسی ارشد کتابداری و اطلاع رسانی پزشکی ",
+      "email": "aliakbarsobhanpoor@gmail.com"
+    },
+    "en": {
+      "name": "AliAkbar Sobhanpoor",
+      "degree": "M.D, librarian and information sciences",
+      "email": "aliakbarsobhanpoor@gmail.com"
+    }
+  },
+  {
+    "fa": {
+      "name": "احسان شیرمحمدی",
+      "degree": "کارشناسی ارشد کتابداری و اطلاع رسانی پزشکی ",
+      "email": "ehsan.shirmohammadi@gmail.com"
+    },
+    "en": {
+      "name": "Ehsan Shirmohammadi",
+      "degree": "M.D, librarian and information sciences",
+      "email": "ehsan.shirmohammadi@gmail.com"
+    }
+  },
+  {
+    "fa": {
+      "name": "مهشید باقری",
+      "degree": "کارشناسی کتابداری و اطلاع رسانی پزشکی ",
+      "email": "mahshidbagheri13831@gmail.com"
+    },
+    "en": {
+      "name": "Mahshid Bagheri",
+      "degree": "B.D, librarian and information sciences",
+      "email": "mahshidbagheri13831@gmail.com"
+    }
+  }
+]
