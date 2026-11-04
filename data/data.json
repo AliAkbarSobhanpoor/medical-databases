@@ -1193,6 +1193,17 @@
     ]
   },
   {
+    "id": "ovid",
+    "name": "Ovid",
+    "categories": ["literature"],
+    "fa": "جستجوی تخصصی منابع پزشکی و علوم سلامت؛ دسترسی به MEDLINE، Embase و PsycINFO",
+    "en": "Advanced medical literature search; access to MEDLINE, Embase, and PsycINFO",
+    "url": "https://ovid.com/",
+    "longFaUrl": "data/content/ovid/ovid.fa.md",
+    "longEnUrl": "data/content/ovid/ovid.en.md",
+    "videos": []
+  },
+  {
     "id": "leapspace",
     "name": "LeapSpace",
     "categories": ["ai_discovery"],
