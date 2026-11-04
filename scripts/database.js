@@ -103,10 +103,10 @@ function render() {
   document.title = d.name + " | " + SHELL[lang].brand;
 
   $("main").innerHTML = `
-    <div class="title-row">
-      <h1 class="big ${lang === "fa" ? "text-end" : "text-start"}">${esc(d.name)}</h1>
+    <div class="title-row flex flex-col gap-4 items-center md:flex-row md:items-center md:justify-between">
+      <h1 class="big  w-full ${lang === "fa" ? "text-end" : "text-start"}">${esc(d.name)}</h1>
       <a class="portal sm ${lang === "fa" ? "[animation-direction:reverse]" : ""}" href="${esc(d.url)}" target="_blank" rel="noopener noreferrer">
-        <span class="txt">${t.lets}</span>
+        <span class="txt font-bold text-lg">${t.lets}</span>
       </a>
     </div>
     <hr class="my-6 h-0.5 w-full border-0 bg-gradient-to-r from-gold via-line to-transparent rtl:bg-gradient-to-l" />

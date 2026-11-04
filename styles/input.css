@@ -1,164 +1,248 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+
 @source "../scripts";
 
+/* ========================================
+   1. Theme Variables
+======================================== */
+
 :root {
-  --page: #f3f7fa;
+  --navy: #0c2340;
+  --teal: #127a8a;
+  --gold: #c9a24a;
+
+  --bg: #f3f7fa;
   --card: #fff;
   --ink: #12263a;
   --mute: #51657a;
   --line: #d5e0e8;
 }
+
 [data-theme="dark"] {
-  --page: #08141f;
+  --bg: #08141f;
   --card: #0f2234;
   --ink: #e6eef5;
   --mute: #98adc0;
   --line: #1d3850;
 }
 
+/* ========================================
+   2. Tailwind Theme
+======================================== */
+
 @theme inline {
-  --color-navy: #0c2340;
-  --color-teal: #127a8a;
-  --color-gold: #c9a24a;
-  --color-page: var(--page);
+  --color-navy: var(--navy);
+  --color-teal: var(--teal);
+  --color-gold: var(--gold);
+
+  --color-page: var(--bg);
   --color-card: var(--card);
   --color-ink: var(--ink);
   --color-mute: var(--mute);
   --color-line: var(--line);
+
   --font-sans: "Vazirmatn", Tahoma, system-ui, sans-serif;
 }
 
 @theme {
   --animate-ecg: ecg 4s linear infinite;
+
   @keyframes ecg {
-    0% { stroke-dashoffset: 900; }
-    45%, 55% { stroke-dashoffset: 0; }
-    100% { stroke-dashoffset: -900; }
+    0% {
+      stroke-dashoffset: 900;
+    }
+    45%,
+    55% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: -900;
+    }
   }
 }
 
+/* ========================================
+   3. Base Styles
+======================================== */
+
 @layer base {
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-sans);
+  }
+
   button:focus-visible,
   a:focus-visible,
   input:focus-visible {
-    outline: 3px solid var(--color-gold);
+    outline: 3px solid var(--gold);
     outline-offset: 2px;
   }
 }
 
-/* url() is relative to styles/index.css, so the image goes in styles/hero.jpg.
-   No image yet? Delete the url(hero.jpg) line. */
-.hero-bg {
-  background:
-    linear-gradient(#0c2340d9, #0c2340b3),
-    url(hero.jpg) center/cover,
-    linear-gradient(135deg, var(--color-navy), var(--color-teal));
-}
+/* ========================================
+   4. Shared Components
+======================================== */
 
 @layer components {
+  /* Heading */
+
   .big {
-    margin: 0 0 2rem;
     font-weight: 800;
     font-size: clamp(2.4rem, 8vw, 5rem);
     line-height: 1.15;
-    color: var(--color-navy);
+    color: var(--navy);
     direction: ltr;
     text-align: start;
   }
+
   [data-theme="dark"] .big {
     color: #fff;
   }
 
+  /* Portal Button */
+
   .portal {
     position: relative;
     overflow: hidden;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+
     width: 100%;
-    min-height: 5rem;
-    padding: 1.5rem 2rem;
-    border: 2px solid var(--color-gold);
+    height: 4rem;
+    padding: 0.5rem 2rem;
+
+    border: 2px solid var(--gold);
     border-radius: 5px;
+
     color: #fff;
+    text-decoration: none;
     font-size: 1.5rem;
-    background: linear-gradient(
-      110deg,
-      var(--color-navy),
-      var(--color-teal),
-      var(--color-navy)
-    );
+
+    background: linear-gradient(110deg, var(--navy), var(--teal), var(--navy));
+
     background-size: 220% 100%;
     animation: flow 7s linear infinite;
+
     transition:
       transform 0.25s,
       box-shadow 0.25s;
   }
+
   .portal:hover {
     transform: scale(1.015);
     box-shadow: 0 12px 32px #127a8a66;
   }
-  .portal .go {
-    background: var(--color-gold);
-    color: var(--color-navy);
-    font-size: 1rem;
-    font-weight: 700;
-    padding: 0.5rem 1.2rem;
-    border-radius: 2rem;
-  }
+
+  /* Portal text */
+
   .portal .txt {
     position: relative;
     z-index: 1;
     padding-inline-start: 0.5rem;
   }
 
+  /* Portal badge */
+
+  .portal .go {
+    background: var(--gold);
+    color: var(--navy);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem 1.2rem;
+    border-radius: 2rem;
+  }
+
+  /* Small Portal Variant */
+
+  .portal.sm {
+    width: 100%;
+    height: 4rem;
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+  }
+
+  .portal.sm .txt {
+    padding-inline-start: 0;
+  }
+
+  .portal.sm:hover {
+    transform: scale(1.015);
+    box-shadow: 0 6px 18px #127a8a66;
+  }
+
+  /* Portal Arrows */
+
   .arrows {
     position: absolute;
     top: 55%;
-    inset-inline-start: 2.5rem;
-    transform: translateY(-50%);
+    inset-inline-end: 2.5rem;
     z-index: 0;
+
+    transform: translateY(-50%);
+
     font-size: 9rem;
     font-weight: 800;
     line-height: 1;
     letter-spacing: -0.05em;
+
     white-space: nowrap;
     direction: ltr;
+
     color: #fff;
     opacity: 0.16;
     pointer-events: none;
+
     transition:
       transform 0.25s,
       opacity 0.25s;
   }
+
   .portal:hover .arrows {
-    transform: translateY(-50%) translateX(-8px);
+    transform: translateY(-50%) translateX(8px);
     opacity: 0.26;
   }
-  [dir="ltr"] .arrows {
-    inset-inline-start: auto;
-    inset-inline-end: 2.5rem;
+
+  [dir="rtl"] .portal:hover .arrows {
+    transform: translateY(-50%) translateX(-8px);
   }
-  [dir="ltr"] .portal:hover .arrows {
-    transform: translateY(-50%) translateX(8px);
-  }
+
+  /* Text Components */
 
   .lead {
     margin: 2rem 0 0.5rem;
     font-size: 1.25rem;
     font-weight: 700;
   }
+
   .long {
     margin: 0.5rem 0 2rem;
-    color: var(--color-mute);
+    color: var(--mute);
   }
+
   .back {
-    color: var(--color-teal);
+    color: var(--teal);
     font-weight: 700;
   }
+
+  /* Hero */
+
+  .hero-bg {
+    background:
+      linear-gradient(#0c2340d9, #0c2340b3),
+      url(hero.jpg) center/cover,
+      linear-gradient(135deg, var(--navy), var(--teal));
+  }
 }
+
+/* ========================================
+   5. Animations
+======================================== */
 
 @keyframes flow {
   to {
@@ -166,12 +250,50 @@
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .portal {
-    animation: none;
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #c9a24aaa;
   }
-  .portal,
-  .arrows {
-    transition: none;
+
+  70% {
+    box-shadow: 0 0 0 18px #c9a24a00;
+  }
+}
+
+/* ========================================
+   6. Responsive Components
+======================================== */
+
+@media (min-width: 768px) {
+  .portal {
+    width: auto;
+    min-width: 180px;
+    height: 4rem;
+    padding: 1rem 1.5rem;
+    flex-shrink: 0;
+  }
+
+  .portal.sm {
+    width: auto;
+    min-width: 180px;
+    height: 4rem;
+    padding: 1rem 1.5rem;
+  }
+}
+
+/* ========================================
+   7. Accessibility
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .ecg path {
+    stroke-dashoffset: 0 !important;
   }
 }
