@@ -1193,6 +1193,32 @@
     ]
   },
   {
+    "id": "leapspace",
+    "name": "LeapSpace",
+    "categories": ["ai_discovery"],
+    "fa": "دستیار هوشمند پژوهش، جست‌وجوی منابع و مقایسه مطالعات",
+    "en": "AI-assisted research, literature discovery, and study comparison",
+    "url": "https://www.elsevier.com/products/leapspace",
+    "longFaUrl": "data/content/leapspace/leapspace.fa.md",
+    "longEnUrl": "data/content/leapspace/leapspace.en.md",
+    "videos": [
+      "<div id=\"32086042943\"><script type=\"text/JavaScript\" src=\"https://www.aparat.com/embed/awowwuw?data[rnddiv]=32086042943&data[responsive]=yes\"></script></div>"
+    ]
+  },
+  {
+    "id": "grammarly",
+    "name": "Grammarly",
+    "categories": ["literature"],
+    "fa": "اصلاح نگارش، دستور زبان و بهبود کیفیت نوشتار با هوش مصنوعی",
+    "en": "AI-powered grammar, proofreading, and writing improvement",
+    "url": "https://www.grammarly.com",
+    "longFaUrl": "data/content/grammarly/grammarly.fa.md",
+    "longEnUrl": "data/content/grammarly/grammarly.en.md",
+    "videos": [
+      "<div id=\"98560747869\"><script type=\"text/JavaScript\" src=\"https://www.aparat.com/embed/jcq9532?data[rnddiv]=98560747869&data[responsive]=yes\"></script></div>"
+    ]
+  },
+  {
     "id": "litmaps",
     "name": "Litmaps",
     "categories": ["ai_discovery"],
